@@ -10,11 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://signalwire.github.io/signalwire-python/api/web.html">
+        <link rel="canonical" href="https://signalwire.github.io/signalwire-python/api/agents.html">
       
       
-        <link rel="prev" href="utils.html">
+        <link rel="prev" href="agent-server.html">
       
+      
+        <link rel="next" href="ai-chat.html">
       
       
         
@@ -25,7 +27,7 @@
     
     
       
-        <title>signalwire.web - SignalWire Python SDK</title>
+        <title>signalwire.agents - SignalWire Python SDK</title>
       
     
     
@@ -84,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#signalwireweb" class="md-skip">
+        <a href="#signalwireagents" class="md-skip">
           Skip to content
         </a>
       
@@ -238,7 +240,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              signalwire.web
+              signalwire.agents
             
           </span>
         </div>
@@ -514,10 +516,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="agents.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.agents
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="agents.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -533,6 +562,292 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#signalwire.agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        agents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.__all__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __all__
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BedrockAgent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BedrockAgent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __init__
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_voice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_inference_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_inference_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_llm_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_llm_model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_llm_temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_llm_temperature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_post_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_post_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.__repr__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __repr__
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        bedrock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="bedrock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.logger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        logger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BedrockAgent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BedrockAgent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __init__
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_voice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_inference_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_inference_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_llm_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_llm_model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_llm_temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_llm_temperature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_post_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_post_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.__repr__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __repr__
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -878,37 +1193,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    signalwire.web
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="web.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="web.html" class="md-nav__link">
         
   
   
@@ -924,424 +1212,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#signalwire.web" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        web
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="web">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.__all__" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        __all__
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WebService
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="WebService">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.port" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        port
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.enable_directory_browsing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_directory_browsing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.max_file_size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        max_file_size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.enable_cors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_cors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.directories" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        directories
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.allowed_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        allowed_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.blocked_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        blocked_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        security
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.app" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        app
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        __init__
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.add_directory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        add_directory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.remove_directory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        remove_directory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        start
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.stop" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        stop
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        web_service
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="web_service">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.logger" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        logger
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WebService
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="WebService">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.port" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        port
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.enable_directory_browsing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_directory_browsing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.max_file_size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        max_file_size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.enable_cors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_cors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.directories" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        directories
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.allowed_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        allowed_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.blocked_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        blocked_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        security
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.app" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        app
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        __init__
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.add_directory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        add_directory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.remove_directory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        remove_directory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        start
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.stop" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        stop
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1381,19 +1251,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#signalwire.web" class="md-nav__link">
+  <a href="#signalwire.agents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        web
+        agents
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="web">
+    <nav class="md-nav" aria-label="agents">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.__all__" class="md-nav__link">
+  <a href="#signalwire.agents.__all__" class="md-nav__link">
     <span class="md-ellipsis">
       
         __all__
@@ -1404,118 +1274,19 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.WebService" class="md-nav__link">
+  <a href="#signalwire.agents.BedrockAgent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        WebService
+        BedrockAgent
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="WebService">
+    <nav class="md-nav" aria-label="BedrockAgent">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.port" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        port
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.enable_directory_browsing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_directory_browsing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.max_file_size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        max_file_size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.enable_cors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_cors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.directories" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        directories
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.allowed_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        allowed_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.blocked_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        blocked_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        security
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.app" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        app
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.__init__" class="md-nav__link">
+  <a href="#signalwire.agents.BedrockAgent.__init__" class="md-nav__link">
     <span class="md-ellipsis">
       
         __init__
@@ -1526,10 +1297,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.add_directory" class="md-nav__link">
+  <a href="#signalwire.agents.BedrockAgent.set_voice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        add_directory
+        set_voice
       
     </span>
   </a>
@@ -1537,10 +1308,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.remove_directory" class="md-nav__link">
+  <a href="#signalwire.agents.BedrockAgent.set_inference_params" class="md-nav__link">
     <span class="md-ellipsis">
       
-        remove_directory
+        set_inference_params
       
     </span>
   </a>
@@ -1548,10 +1319,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.start" class="md-nav__link">
+  <a href="#signalwire.agents.BedrockAgent.set_llm_model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        start
+        set_llm_model
       
     </span>
   </a>
@@ -1559,10 +1330,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.WebService.stop" class="md-nav__link">
+  <a href="#signalwire.agents.BedrockAgent.set_llm_temperature" class="md-nav__link">
     <span class="md-ellipsis">
       
-        stop
+        set_llm_temperature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_post_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_post_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.set_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.BedrockAgent.__repr__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __repr__
       
     </span>
   </a>
@@ -1575,19 +1379,19 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock" class="md-nav__link">
     <span class="md-ellipsis">
       
-        web_service
+        bedrock
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="web_service">
+    <nav class="md-nav" aria-label="bedrock">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.logger" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock.logger" class="md-nav__link">
     <span class="md-ellipsis">
       
         logger
@@ -1598,118 +1402,19 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock.BedrockAgent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        WebService
+        BedrockAgent
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="WebService">
+    <nav class="md-nav" aria-label="BedrockAgent">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.port" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        port
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.enable_directory_browsing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_directory_browsing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.max_file_size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        max_file_size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.enable_cors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        enable_cors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.directories" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        directories
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.allowed_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        allowed_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.blocked_extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        blocked_extensions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        security
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.app" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        app
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.__init__" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.__init__" class="md-nav__link">
     <span class="md-ellipsis">
       
         __init__
@@ -1720,10 +1425,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.add_directory" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_voice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        add_directory
+        set_voice
       
     </span>
   </a>
@@ -1731,10 +1436,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.remove_directory" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_inference_params" class="md-nav__link">
     <span class="md-ellipsis">
       
-        remove_directory
+        set_inference_params
       
     </span>
   </a>
@@ -1742,10 +1447,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.start" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_llm_model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        start
+        set_llm_model
       
     </span>
   </a>
@@ -1753,10 +1458,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#signalwire.web.web_service.WebService.stop" class="md-nav__link">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_llm_temperature" class="md-nav__link">
     <span class="md-ellipsis">
       
-        stop
+        set_llm_temperature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_post_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_post_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.set_prompt_llm_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set_prompt_llm_params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.agents.bedrock.BedrockAgent.__repr__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __repr__
       
     </span>
   </a>
@@ -1795,18 +1533,18 @@
 
 
 
-<h1 id="signalwireweb">signalwire.web<a class="headerlink" href="#signalwireweb" title="Permanent link">&para;</a></h1>
+<h1 id="signalwireagents">signalwire.agents<a class="headerlink" href="#signalwireagents" title="Permanent link">&para;</a></h1>
 
 
 <div class="doc doc-object doc-module">
 
 
 
-<h2 id="signalwire.web" class="doc doc-heading">
-            <code>signalwire.web</code>
+<h2 id="signalwire.agents" class="doc doc-heading">
+            <code>signalwire.agents</code>
 
 
-<a href="#signalwire.web" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#signalwire.agents" class="headerlink" title="Permanent link">&para;</a></h2>
 
     <div class="doc doc-contents first">
 
@@ -1814,8 +1552,7 @@
 <p>This file is part of the SignalWire SDK.</p>
 <p>Licensed under the MIT License.
 See LICENSE file in the project root for full license information.</p>
-<p>SignalWire Agents Web Service Module</p>
-<p>This module provides static file serving capabilities for the SignalWire Agents SDK.</p>
+<p>Specialized agent implementations backed by specific inference providers.</p>
 
 
 
@@ -1838,14 +1575,14 @@ See LICENSE file in the project root for full license information.</p>
 
 
 
-<h3 id="signalwire.web.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'WebService'</span><span class="p">]</span></code>
+<h3 id="signalwire.agents.__all__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'BedrockAgent'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
   </span>
 
-<a href="#signalwire.web.__all__" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#signalwire.agents.__all__" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
@@ -1860,18 +1597,29 @@ See LICENSE file in the project root for full license information.</p>
 
 
 
-<h3 id="signalwire.web.WebService" class="doc doc-heading">
-            <code>WebService</code>
+<h3 id="signalwire.agents.BedrockAgent" class="doc doc-heading">
+            <code>BedrockAgent</code>
 
 
-<a href="#signalwire.web.WebService" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#signalwire.agents.BedrockAgent" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="AgentBase (signalwire.core.agent_base.AgentBase)" href="core.html#signalwire.core.agent_base.AgentBase">AgentBase</a></code></p>
 
 
 
-        <p>Static file serving service with HTTP API</p>
+        <p>Agent implementation for Amazon Bedrock voice-to-voice model</p>
+<p>This agent extends AgentBase to provide full compatibility with
+SignalWire's agent ecosystem while using Amazon Bedrock as the
+AI backend. It supports all standard agent features including:
+- Prompt building with text and POM
+- Skills and SWAIG functions
+- Post-prompt functionality
+- Dynamic configuration</p>
+<p>The main difference from the standard agent is that it generates
+SWML with the "amazon_bedrock" verb instead of "ai".</p>
 
 
 
@@ -1891,201 +1639,21 @@ See LICENSE file in the project root for full license information.</p>
 
 
 
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.port" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">port</span> <span class="o">=</span> <span class="n">port</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.port" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.enable_directory_browsing" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">enable_directory_browsing</span> <span class="o">=</span> <span class="n">enable_directory_browsing</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.enable_directory_browsing" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.max_file_size" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_file_size</span> <span class="o">=</span> <span class="n">max_file_size</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.max_file_size" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.enable_cors" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">enable_cors</span> <span class="o">=</span> <span class="n">enable_cors</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.enable_cors" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.directories" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">directories</span> <span class="o">=</span> <span class="n">directories</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.directories" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.allowed_extensions" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">allowed_extensions</span> <span class="o">=</span> <span class="n">allowed_extensions</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.allowed_extensions" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.blocked_extensions" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">blocked_extensions</span> <span class="o">=</span> <span class="n">blocked_extensions</span> <span class="ow">or</span> <span class="p">[</span><span class="s1">'.env'</span><span class="p">,</span> <span class="s1">'.git'</span><span class="p">,</span> <span class="s1">'.gitignore'</span><span class="p">,</span> <span class="s1">'.key'</span><span class="p">,</span> <span class="s1">'.pem'</span><span class="p">,</span> <span class="s1">'.crt'</span><span class="p">,</span> <span class="s1">'.pyc'</span><span class="p">,</span> <span class="s1">'__pycache__'</span><span class="p">,</span> <span class="s1">'.DS_Store'</span><span class="p">,</span> <span class="s1">'.swp'</span><span class="p">]</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.blocked_extensions" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.security" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_file</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">'web'</span><span class="p">)</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.security" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="signalwire.web.WebService.app" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">app</span> <span class="o">=</span> <span class="kc">None</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.WebService.app" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
 
 
 
 <div class="doc doc-object doc-function">
 
 
-<h4 id="signalwire.web.WebService.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8002</span><span class="p">,</span> <span class="n">directories</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">basic_auth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">enable_directory_browsing</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allowed_extensions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">blocked_extensions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_file_size</span><span class="o">=</span><span class="mi">100</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">,</span> <span class="n">enable_cors</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+<h4 id="signalwire.agents.BedrockAgent.__init__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'bedrock_agent'</span><span class="p">,</span> <span class="n">route</span><span class="o">=</span><span class="s1">'/bedrock'</span><span class="p">,</span> <span class="n">system_prompt</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">voice_id</span><span class="o">=</span><span class="s1">'matthew'</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.WebService.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#signalwire.agents.BedrockAgent.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
 
-        <p>Initialize WebService</p>
+        <p>Initialize BedrockAgent</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -2101,62 +1669,46 @@ See LICENSE file in the project root for full license information.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>port</code>
+                <code>name</code>
             </td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Port to bind to (default: 8002)</p>
+                <p>Agent name</p>
               </div>
             </td>
             <td>
-                  <code>8002</code>
+                  <code>&#39;bedrock_agent&#39;</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>directories</code>
+                <code>route</code>
             </td>
             <td>
-                  <code><span title="dict">dict</span>[<span title="str">str</span>, <span title="str">str</span>] | None</code>
+                  <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Dict mapping URL paths to local directories</p>
+                <p>HTTP route for the agent</p>
               </div>
             </td>
             <td>
-                  <code>None</code>
+                  <code>&#39;/bedrock&#39;</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>basic_auth</code>
-            </td>
-            <td>
-                  <code><span title="tuple">tuple</span>[<span title="str">str</span>, <span title="str">str</span>] | None</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Optional tuple of (username, password)</p>
-              </div>
-            </td>
-            <td>
-                  <code>None</code>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>config_file</code>
+                <code>system_prompt</code>
             </td>
             <td>
                   <code><span title="str">str</span> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Optional configuration file path</p>
+                <p>Initial system prompt (can be overridden with set_prompt)</p>
               </div>
             </td>
             <td>
@@ -2165,82 +1717,82 @@ See LICENSE file in the project root for full license information.</p>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>enable_directory_browsing</code>
+                <code>voice_id</code>
             </td>
             <td>
-                  <code><span title="bool">bool</span></code>
+                  <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Allow directory listing</p>
+                <p>Bedrock voice ID (default: matthew)</p>
               </div>
             </td>
             <td>
-                  <code>False</code>
+                  <code>&#39;matthew&#39;</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>allowed_extensions</code>
+                <code>temperature</code>
             </td>
             <td>
-                  <code><span title="list">list</span>[<span title="str">str</span>] | None</code>
+                  <code><span title="float">float</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List of allowed file extensions (e.g., ['.html', '.css'])</p>
+                <p>Generation temperature (0-1)</p>
               </div>
             </td>
             <td>
-                  <code>None</code>
+                  <code>0.7</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>blocked_extensions</code>
+                <code>top_p</code>
             </td>
             <td>
-                  <code><span title="list">list</span>[<span title="str">str</span>] | None</code>
+                  <code><span title="float">float</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List of blocked extensions (e.g., ['.env', '.git'])</p>
+                <p>Nucleus sampling parameter (0-1)</p>
               </div>
             </td>
             <td>
-                  <code>None</code>
+                  <code>0.9</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>max_file_size</code>
+                <code>max_tokens</code>
             </td>
             <td>
                   <code><span title="int">int</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Maximum file size in bytes to serve</p>
+                <p>Maximum tokens to generate</p>
               </div>
             </td>
             <td>
-                  <code>100 * 1024 * 1024</code>
+                  <code>1024</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>enable_cors</code>
+                <code>**kwargs</code>
             </td>
             <td>
-                  <code><span title="bool">bool</span></code>
+                  <code><span title="typing.Any">Any</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Enable CORS support</p>
+                <p>Additional arguments passed to AgentBase</p>
               </div>
             </td>
             <td>
-                  <code>True</code>
+                  <code>{}</code>
             </td>
           </tr>
       </tbody>
@@ -2254,15 +1806,15 @@ See LICENSE file in the project root for full license information.</p>
 <div class="doc doc-object doc-function">
 
 
-<h4 id="signalwire.web.WebService.add_directory" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">add_directory</span><span class="p">(</span><span class="n">route</span><span class="p">,</span> <span class="n">directory</span><span class="p">)</span></code>
+<h4 id="signalwire.agents.BedrockAgent.set_voice" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_voice</span><span class="p">(</span><span class="n">voice_id</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.WebService.add_directory" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#signalwire.agents.BedrockAgent.set_voice" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
 
-        <p>Add a new directory to serve</p>
+        <p>Set the Bedrock voice ID</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -2278,30 +1830,14 @@ See LICENSE file in the project root for full license information.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>route</code>
+                <code>voice_id</code>
             </td>
             <td>
                   <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>URL path to mount at (e.g., "/docs")</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>directory</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Local directory path to serve</p>
+                <p>Bedrock voice identifier (e.g., 'matthew', 'joanna')</p>
               </div>
             </td>
             <td>
@@ -2319,15 +1855,15 @@ See LICENSE file in the project root for full license information.</p>
 <div class="doc doc-object doc-function">
 
 
-<h4 id="signalwire.web.WebService.remove_directory" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">remove_directory</span><span class="p">(</span><span class="n">route</span><span class="p">)</span></code>
+<h4 id="signalwire.agents.BedrockAgent.set_inference_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_inference_params</span><span class="p">(</span><span class="n">temperature</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.WebService.remove_directory" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#signalwire.agents.BedrockAgent.set_inference_params" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
 
-        <p>Remove a directory from being served</p>
+        <p>Update Bedrock inference parameters</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -2343,111 +1879,46 @@ See LICENSE file in the project root for full license information.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>route</code>
+                <code>temperature</code>
             </td>
             <td>
-                  <code><span title="str">str</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>URL path to remove</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h4 id="signalwire.web.WebService.start" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">start</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">'0.0.0.0'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_cert</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_key</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-<a href="#signalwire.web.WebService.start" class="headerlink" title="Permanent link">&para;</a></h4>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Start the service with optional HTTPS support</p>
-
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>host</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span></code>
+                  <code><span title="float">float</span> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Host to bind to (default: "0.0.0.0")</p>
+                <p>Generation temperature (0-1)</p>
               </div>
             </td>
             <td>
-                  <code>&#39;0.0.0.0&#39;</code>
+                  <code>None</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>port</code>
+                <code>top_p</code>
+            </td>
+            <td>
+                  <code><span title="float">float</span> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Nucleus sampling parameter (0-1)</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>max_tokens</code>
             </td>
             <td>
                   <code><span title="int">int</span> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Port to bind to (default: self.port)</p>
-              </div>
-            </td>
-            <td>
-                  <code>None</code>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>ssl_cert</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span> | None</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Path to SSL certificate file (overrides environment)</p>
-              </div>
-            </td>
-            <td>
-                  <code>None</code>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>ssl_key</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span> | None</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Path to SSL key file (overrides environment)</p>
+                <p>Maximum tokens to generate</p>
               </div>
             </td>
             <td>
@@ -2465,15 +1936,217 @@ See LICENSE file in the project root for full license information.</p>
 <div class="doc doc-object doc-function">
 
 
-<h4 id="signalwire.web.WebService.stop" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">stop</span><span class="p">()</span></code>
+<h4 id="signalwire.agents.BedrockAgent.set_llm_model" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_llm_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.WebService.stop" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#signalwire.agents.BedrockAgent.set_llm_model" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
 
-        <p>Stop the service (placeholder for cleanup)</p>
+        <p>Set LLM model - not applicable for Bedrock</p>
+<p>Bedrock uses a fixed voice-to-voice model, so this method
+logs a warning and does nothing.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>model</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Model name (ignored)</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="signalwire.agents.BedrockAgent.set_llm_temperature" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_llm_temperature</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span></code>
+
+<a href="#signalwire.agents.BedrockAgent.set_llm_temperature" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set LLM temperature - redirects to set_inference_params</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>temperature</code>
+            </td>
+            <td>
+                  <code><span title="float">float</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Temperature value</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="signalwire.agents.BedrockAgent.set_post_prompt_llm_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_post_prompt_llm_params</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="p">)</span></code>
+
+<a href="#signalwire.agents.BedrockAgent.set_post_prompt_llm_params" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set post-prompt LLM parameters - not applicable for Bedrock</p>
+<p>Bedrock uses OpenAI for post-prompt summarization, but those
+parameters are configured in the C code.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>**params</code>
+            </td>
+            <td>
+                  <code><span title="typing.Any">Any</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Ignored parameters</p>
+              </div>
+            </td>
+            <td>
+                  <code>{}</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="signalwire.agents.BedrockAgent.set_prompt_llm_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_prompt_llm_params</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="p">)</span></code>
+
+<a href="#signalwire.agents.BedrockAgent.set_prompt_llm_params" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set prompt LLM parameters - use set_inference_params instead</p>
+<p>For Bedrock, use set_inference_params() to configure temperature,
+top_p, and max_tokens.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>**params</code>
+            </td>
+            <td>
+                  <code><span title="typing.Any">Any</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Parameters (ignored, use set_inference_params)</p>
+              </div>
+            </td>
+            <td>
+                  <code>{}</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="signalwire.agents.BedrockAgent.__repr__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__repr__</span><span class="p">()</span></code>
+
+<a href="#signalwire.agents.BedrockAgent.__repr__" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+        <p>String representation of the agent</p>
 
 
     </div>
@@ -2494,11 +2167,11 @@ See LICENSE file in the project root for full license information.</p>
 
 
 
-<h3 id="signalwire.web.web_service" class="doc doc-heading">
-            <code>web_service</code>
+<h3 id="signalwire.agents.bedrock" class="doc doc-heading">
+            <code>bedrock</code>
 
 
-<a href="#signalwire.web.web_service" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#signalwire.agents.bedrock" class="headerlink" title="Permanent link">&para;</a></h3>
 
     <div class="doc doc-contents ">
 
@@ -2506,6 +2179,10 @@ See LICENSE file in the project root for full license information.</p>
 <p>This file is part of the SignalWire SDK.</p>
 <p>Licensed under the MIT License.
 See LICENSE file in the project root for full license information.</p>
+<p>Bedrock Agent - Amazon Bedrock voice-to-voice integration</p>
+<p>This module provides BedrockAgent, which extends AgentBase to support
+Amazon Bedrock's voice-to-voice model while maintaining compatibility
+with all SignalWire agent features like skills, POM, and SWAIG functions.</p>
 
 
 
@@ -2528,14 +2205,14 @@ See LICENSE file in the project root for full license information.</p>
 
 
 
-<h4 id="signalwire.web.web_service.logger" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">'web_service'</span><span class="p">)</span></code>
+<h4 id="signalwire.agents.bedrock.logger" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">'bedrock_agent'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
   </span>
 
-<a href="#signalwire.web.web_service.logger" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#signalwire.agents.bedrock.logger" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2550,18 +2227,29 @@ See LICENSE file in the project root for full license information.</p>
 
 
 
-<h4 id="signalwire.web.web_service.WebService" class="doc doc-heading">
-            <code>WebService</code>
+<h4 id="signalwire.agents.bedrock.BedrockAgent" class="doc doc-heading">
+            <code>BedrockAgent</code>
 
 
-<a href="#signalwire.web.web_service.WebService" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#signalwire.agents.bedrock.BedrockAgent" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="AgentBase (signalwire.core.agent_base.AgentBase)" href="core.html#signalwire.core.agent_base.AgentBase">AgentBase</a></code></p>
 
 
 
-        <p>Static file serving service with HTTP API</p>
+        <p>Agent implementation for Amazon Bedrock voice-to-voice model</p>
+<p>This agent extends AgentBase to provide full compatibility with
+SignalWire's agent ecosystem while using Amazon Bedrock as the
+AI backend. It supports all standard agent features including:
+- Prompt building with text and POM
+- Skills and SWAIG functions
+- Post-prompt functionality
+- Dynamic configuration</p>
+<p>The main difference from the standard agent is that it generates
+SWML with the "amazon_bedrock" verb instead of "ai".</p>
 
 
 
@@ -2581,201 +2269,21 @@ See LICENSE file in the project root for full license information.</p>
 
 
 
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.port" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">port</span> <span class="o">=</span> <span class="n">port</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.port" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.enable_directory_browsing" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">enable_directory_browsing</span> <span class="o">=</span> <span class="n">enable_directory_browsing</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.enable_directory_browsing" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.max_file_size" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_file_size</span> <span class="o">=</span> <span class="n">max_file_size</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.max_file_size" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.enable_cors" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">enable_cors</span> <span class="o">=</span> <span class="n">enable_cors</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.enable_cors" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.directories" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">directories</span> <span class="o">=</span> <span class="n">directories</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.directories" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.allowed_extensions" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">allowed_extensions</span> <span class="o">=</span> <span class="n">allowed_extensions</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.allowed_extensions" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.blocked_extensions" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">blocked_extensions</span> <span class="o">=</span> <span class="n">blocked_extensions</span> <span class="ow">or</span> <span class="p">[</span><span class="s1">'.env'</span><span class="p">,</span> <span class="s1">'.git'</span><span class="p">,</span> <span class="s1">'.gitignore'</span><span class="p">,</span> <span class="s1">'.key'</span><span class="p">,</span> <span class="s1">'.pem'</span><span class="p">,</span> <span class="s1">'.crt'</span><span class="p">,</span> <span class="s1">'.pyc'</span><span class="p">,</span> <span class="s1">'__pycache__'</span><span class="p">,</span> <span class="s1">'.DS_Store'</span><span class="p">,</span> <span class="s1">'.swp'</span><span class="p">]</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.blocked_extensions" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.security" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_file</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">'web'</span><span class="p">)</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.security" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h5 id="signalwire.web.web_service.WebService.app" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">app</span> <span class="o">=</span> <span class="kc">None</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#signalwire.web.web_service.WebService.app" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-    </div>
-
-</div>
-
 
 
 
 <div class="doc doc-object doc-function">
 
 
-<h5 id="signalwire.web.web_service.WebService.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8002</span><span class="p">,</span> <span class="n">directories</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">basic_auth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">enable_directory_browsing</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allowed_extensions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">blocked_extensions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_file_size</span><span class="o">=</span><span class="mi">100</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">,</span> <span class="n">enable_cors</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+<h5 id="signalwire.agents.bedrock.BedrockAgent.__init__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'bedrock_agent'</span><span class="p">,</span> <span class="n">route</span><span class="o">=</span><span class="s1">'/bedrock'</span><span class="p">,</span> <span class="n">system_prompt</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">voice_id</span><span class="o">=</span><span class="s1">'matthew'</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.web_service.WebService.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
+<a href="#signalwire.agents.bedrock.BedrockAgent.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
 
     <div class="doc doc-contents ">
 
-        <p>Initialize WebService</p>
+        <p>Initialize BedrockAgent</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -2791,62 +2299,46 @@ See LICENSE file in the project root for full license information.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>port</code>
+                <code>name</code>
             </td>
             <td>
-                  <code><span title="int">int</span></code>
+                  <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Port to bind to (default: 8002)</p>
+                <p>Agent name</p>
               </div>
             </td>
             <td>
-                  <code>8002</code>
+                  <code>&#39;bedrock_agent&#39;</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>directories</code>
+                <code>route</code>
             </td>
             <td>
-                  <code><span title="dict">dict</span>[<span title="str">str</span>, <span title="str">str</span>] | None</code>
+                  <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Dict mapping URL paths to local directories</p>
+                <p>HTTP route for the agent</p>
               </div>
             </td>
             <td>
-                  <code>None</code>
+                  <code>&#39;/bedrock&#39;</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>basic_auth</code>
-            </td>
-            <td>
-                  <code><span title="tuple">tuple</span>[<span title="str">str</span>, <span title="str">str</span>] | None</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Optional tuple of (username, password)</p>
-              </div>
-            </td>
-            <td>
-                  <code>None</code>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>config_file</code>
+                <code>system_prompt</code>
             </td>
             <td>
                   <code><span title="str">str</span> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Optional configuration file path</p>
+                <p>Initial system prompt (can be overridden with set_prompt)</p>
               </div>
             </td>
             <td>
@@ -2855,82 +2347,82 @@ See LICENSE file in the project root for full license information.</p>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>enable_directory_browsing</code>
+                <code>voice_id</code>
             </td>
             <td>
-                  <code><span title="bool">bool</span></code>
+                  <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Allow directory listing</p>
+                <p>Bedrock voice ID (default: matthew)</p>
               </div>
             </td>
             <td>
-                  <code>False</code>
+                  <code>&#39;matthew&#39;</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>allowed_extensions</code>
+                <code>temperature</code>
             </td>
             <td>
-                  <code><span title="list">list</span>[<span title="str">str</span>] | None</code>
+                  <code><span title="float">float</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List of allowed file extensions (e.g., ['.html', '.css'])</p>
+                <p>Generation temperature (0-1)</p>
               </div>
             </td>
             <td>
-                  <code>None</code>
+                  <code>0.7</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>blocked_extensions</code>
+                <code>top_p</code>
             </td>
             <td>
-                  <code><span title="list">list</span>[<span title="str">str</span>] | None</code>
+                  <code><span title="float">float</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>List of blocked extensions (e.g., ['.env', '.git'])</p>
+                <p>Nucleus sampling parameter (0-1)</p>
               </div>
             </td>
             <td>
-                  <code>None</code>
+                  <code>0.9</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>max_file_size</code>
+                <code>max_tokens</code>
             </td>
             <td>
                   <code><span title="int">int</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Maximum file size in bytes to serve</p>
+                <p>Maximum tokens to generate</p>
               </div>
             </td>
             <td>
-                  <code>100 * 1024 * 1024</code>
+                  <code>1024</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>enable_cors</code>
+                <code>**kwargs</code>
             </td>
             <td>
-                  <code><span title="bool">bool</span></code>
+                  <code><span title="typing.Any">Any</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Enable CORS support</p>
+                <p>Additional arguments passed to AgentBase</p>
               </div>
             </td>
             <td>
-                  <code>True</code>
+                  <code>{}</code>
             </td>
           </tr>
       </tbody>
@@ -2944,15 +2436,15 @@ See LICENSE file in the project root for full license information.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="signalwire.web.web_service.WebService.add_directory" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">add_directory</span><span class="p">(</span><span class="n">route</span><span class="p">,</span> <span class="n">directory</span><span class="p">)</span></code>
+<h5 id="signalwire.agents.bedrock.BedrockAgent.set_voice" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_voice</span><span class="p">(</span><span class="n">voice_id</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.web_service.WebService.add_directory" class="headerlink" title="Permanent link">&para;</a></h5>
+<a href="#signalwire.agents.bedrock.BedrockAgent.set_voice" class="headerlink" title="Permanent link">&para;</a></h5>
 
 
     <div class="doc doc-contents ">
 
-        <p>Add a new directory to serve</p>
+        <p>Set the Bedrock voice ID</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -2968,30 +2460,14 @@ See LICENSE file in the project root for full license information.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>route</code>
+                <code>voice_id</code>
             </td>
             <td>
                   <code><span title="str">str</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>URL path to mount at (e.g., "/docs")</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>directory</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Local directory path to serve</p>
+                <p>Bedrock voice identifier (e.g., 'matthew', 'joanna')</p>
               </div>
             </td>
             <td>
@@ -3009,15 +2485,15 @@ See LICENSE file in the project root for full license information.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="signalwire.web.web_service.WebService.remove_directory" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">remove_directory</span><span class="p">(</span><span class="n">route</span><span class="p">)</span></code>
+<h5 id="signalwire.agents.bedrock.BedrockAgent.set_inference_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_inference_params</span><span class="p">(</span><span class="n">temperature</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.web_service.WebService.remove_directory" class="headerlink" title="Permanent link">&para;</a></h5>
+<a href="#signalwire.agents.bedrock.BedrockAgent.set_inference_params" class="headerlink" title="Permanent link">&para;</a></h5>
 
 
     <div class="doc doc-contents ">
 
-        <p>Remove a directory from being served</p>
+        <p>Update Bedrock inference parameters</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -3033,111 +2509,46 @@ See LICENSE file in the project root for full license information.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>route</code>
+                <code>temperature</code>
             </td>
             <td>
-                  <code><span title="str">str</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>URL path to remove</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h5 id="signalwire.web.web_service.WebService.start" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">start</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">'0.0.0.0'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_cert</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_key</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-<a href="#signalwire.web.web_service.WebService.start" class="headerlink" title="Permanent link">&para;</a></h5>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Start the service with optional HTTPS support</p>
-
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>host</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span></code>
+                  <code><span title="float">float</span> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Host to bind to (default: "0.0.0.0")</p>
+                <p>Generation temperature (0-1)</p>
               </div>
             </td>
             <td>
-                  <code>&#39;0.0.0.0&#39;</code>
+                  <code>None</code>
             </td>
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>port</code>
+                <code>top_p</code>
+            </td>
+            <td>
+                  <code><span title="float">float</span> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Nucleus sampling parameter (0-1)</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>max_tokens</code>
             </td>
             <td>
                   <code><span title="int">int</span> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Port to bind to (default: self.port)</p>
-              </div>
-            </td>
-            <td>
-                  <code>None</code>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>ssl_cert</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span> | None</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Path to SSL certificate file (overrides environment)</p>
-              </div>
-            </td>
-            <td>
-                  <code>None</code>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
-                <code>ssl_key</code>
-            </td>
-            <td>
-                  <code><span title="str">str</span> | None</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Path to SSL key file (overrides environment)</p>
+                <p>Maximum tokens to generate</p>
               </div>
             </td>
             <td>
@@ -3155,15 +2566,217 @@ See LICENSE file in the project root for full license information.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="signalwire.web.web_service.WebService.stop" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">stop</span><span class="p">()</span></code>
+<h5 id="signalwire.agents.bedrock.BedrockAgent.set_llm_model" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_llm_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span></code>
 
-<a href="#signalwire.web.web_service.WebService.stop" class="headerlink" title="Permanent link">&para;</a></h5>
+<a href="#signalwire.agents.bedrock.BedrockAgent.set_llm_model" class="headerlink" title="Permanent link">&para;</a></h5>
 
 
     <div class="doc doc-contents ">
 
-        <p>Stop the service (placeholder for cleanup)</p>
+        <p>Set LLM model - not applicable for Bedrock</p>
+<p>Bedrock uses a fixed voice-to-voice model, so this method
+logs a warning and does nothing.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>model</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Model name (ignored)</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h5 id="signalwire.agents.bedrock.BedrockAgent.set_llm_temperature" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_llm_temperature</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span></code>
+
+<a href="#signalwire.agents.bedrock.BedrockAgent.set_llm_temperature" class="headerlink" title="Permanent link">&para;</a></h5>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set LLM temperature - redirects to set_inference_params</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>temperature</code>
+            </td>
+            <td>
+                  <code><span title="float">float</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Temperature value</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h5 id="signalwire.agents.bedrock.BedrockAgent.set_post_prompt_llm_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_post_prompt_llm_params</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="p">)</span></code>
+
+<a href="#signalwire.agents.bedrock.BedrockAgent.set_post_prompt_llm_params" class="headerlink" title="Permanent link">&para;</a></h5>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set post-prompt LLM parameters - not applicable for Bedrock</p>
+<p>Bedrock uses OpenAI for post-prompt summarization, but those
+parameters are configured in the C code.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>**params</code>
+            </td>
+            <td>
+                  <code><span title="typing.Any">Any</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Ignored parameters</p>
+              </div>
+            </td>
+            <td>
+                  <code>{}</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h5 id="signalwire.agents.bedrock.BedrockAgent.set_prompt_llm_params" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_prompt_llm_params</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="p">)</span></code>
+
+<a href="#signalwire.agents.bedrock.BedrockAgent.set_prompt_llm_params" class="headerlink" title="Permanent link">&para;</a></h5>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set prompt LLM parameters - use set_inference_params instead</p>
+<p>For Bedrock, use set_inference_params() to configure temperature,
+top_p, and max_tokens.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>**params</code>
+            </td>
+            <td>
+                  <code><span title="typing.Any">Any</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Parameters (ignored, use set_inference_params)</p>
+              </div>
+            </td>
+            <td>
+                  <code>{}</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h5 id="signalwire.agents.bedrock.BedrockAgent.__repr__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__repr__</span><span class="p">()</span></code>
+
+<a href="#signalwire.agents.bedrock.BedrockAgent.__repr__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+
+    <div class="doc doc-contents ">
+
+        <p>String representation of the agent</p>
 
 
     </div>

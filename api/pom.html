@@ -426,6 +426,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -495,6 +499,62 @@
     
   
     signalwire.agent_server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="agents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-chat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.ai_chat
   
 
     
@@ -2501,7 +2561,7 @@ signalwire-pom dependency.</p>
 
 
 <h3 id="signalwire.pom.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;PromptObjectModel&#39;</span><span class="p">,</span> <span class="s1">&#39;Section&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'PromptObjectModel'</span><span class="p">,</span> <span class="s1">'Section'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -2822,7 +2882,7 @@ of section dictionaries as produced by PomBuilder.from_sections)</p>
 
 
 <h4 id="signalwire.pom.PromptObjectModel.add_section" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">add_section</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">add_section</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#signalwire.pom.PromptObjectModel.add_section" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -3619,7 +3679,7 @@ and can have any number of nested subsections.</p>
 
 
 <h4 id="signalwire.pom.Section.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#signalwire.pom.Section.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -3671,7 +3731,7 @@ and can have any number of nested subsections.</p>
 
 
 <h4 id="signalwire.pom.Section.add_subsection" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">add_subsection</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">add_subsection</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#signalwire.pom.Section.add_subsection" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -4329,7 +4389,7 @@ and can have any number of nested subsections.</p>
 
 
 <h5 id="signalwire.pom.pom.Section.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#signalwire.pom.pom.Section.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -4381,7 +4441,7 @@ and can have any number of nested subsections.</p>
 
 
 <h5 id="signalwire.pom.pom.Section.add_subsection" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">add_subsection</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">add_subsection</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#signalwire.pom.pom.Section.add_subsection" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -5042,7 +5102,7 @@ of section dictionaries as produced by PomBuilder.from_sections)</p>
 
 
 <h5 id="signalwire.pom.pom.PromptObjectModel.add_section" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">add_section</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">add_section</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">bullets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numbered</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberedBullets</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#signalwire.pom.pom.PromptObjectModel.add_section" class="headerlink" title="Permanent link">&para;</a></h5>
 

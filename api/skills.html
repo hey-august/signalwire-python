@@ -426,6 +426,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -495,6 +499,62 @@
     
   
     signalwire.agent_server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="agents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-chat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.ai_chat
   
 
     
@@ -12450,7 +12510,7 @@ Skills are automatically discovered from subdirectories.</p>
 
 
 <h3 id="signalwire.skills.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SkillBase&#39;</span><span class="p">,</span> <span class="s1">&#39;skill_registry&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'SkillBase'</span><span class="p">,</span> <span class="s1">'skill_registry'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -12551,7 +12611,7 @@ Skills are automatically discovered from subdirectories.</p>
 
 
 <h4 id="signalwire.skills.SkillBase.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -12673,7 +12733,7 @@ Skills are automatically discovered from subdirectories.</p>
 
 
 <h4 id="signalwire.skills.SkillBase.logger" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;signalwire.skills.</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">SKILL_NAME</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="sa">f</span><span class="s1">'signalwire.skills.</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">SKILL_NAME</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -12693,7 +12753,7 @@ Skills are automatically discovered from subdirectories.</p>
 
 
 <h4 id="signalwire.skills.SkillBase.swaig_fields" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">swaig_fields</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;swaig_fields&#39;</span><span class="p">,</span> <span class="p">{})</span></code>
+            <code class="highlight language-python"><span class="n">swaig_fields</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">'swaig_fields'</span><span class="p">,</span> <span class="p">{})</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -12805,6 +12865,7 @@ instead of calling self.agent.define_tool() directly.</p>
                 <code>**kwargs</code>
             </td>
             <td>
+                  <code><span title="typing.Any">Any</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13280,7 +13341,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.skills.api_ninjas_trivia.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ApiNinjasTriviaSkill&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ApiNinjasTriviaSkill'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -13369,7 +13430,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.api_ninjas_trivia.ApiNinjasTriviaSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;api_ninjas_trivia&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'api_ninjas_trivia'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -13390,7 +13451,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.api_ninjas_trivia.ApiNinjasTriviaSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Get trivia questions from API Ninjas&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Get trivia questions from API Ninjas'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -13452,7 +13513,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.api_ninjas_trivia.ApiNinjasTriviaSkill.VALID_CATEGORIES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">VALID_CATEGORIES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;artliterature&#39;</span><span class="p">:</span> <span class="s1">&#39;Art and Literature&#39;</span><span class="p">,</span> <span class="s1">&#39;language&#39;</span><span class="p">:</span> <span class="s1">&#39;Language&#39;</span><span class="p">,</span> <span class="s1">&#39;sciencenature&#39;</span><span class="p">:</span> <span class="s1">&#39;Science and Nature&#39;</span><span class="p">,</span> <span class="s1">&#39;general&#39;</span><span class="p">:</span> <span class="s1">&#39;General Knowledge&#39;</span><span class="p">,</span> <span class="s1">&#39;fooddrink&#39;</span><span class="p">:</span> <span class="s1">&#39;Food and Drink&#39;</span><span class="p">,</span> <span class="s1">&#39;peopleplaces&#39;</span><span class="p">:</span> <span class="s1">&#39;People and Places&#39;</span><span class="p">,</span> <span class="s1">&#39;geography&#39;</span><span class="p">:</span> <span class="s1">&#39;Geography&#39;</span><span class="p">,</span> <span class="s1">&#39;historyholidays&#39;</span><span class="p">:</span> <span class="s1">&#39;History and Holidays&#39;</span><span class="p">,</span> <span class="s1">&#39;entertainment&#39;</span><span class="p">:</span> <span class="s1">&#39;Entertainment&#39;</span><span class="p">,</span> <span class="s1">&#39;toysgames&#39;</span><span class="p">:</span> <span class="s1">&#39;Toys and Games&#39;</span><span class="p">,</span> <span class="s1">&#39;music&#39;</span><span class="p">:</span> <span class="s1">&#39;Music&#39;</span><span class="p">,</span> <span class="s1">&#39;mathematics&#39;</span><span class="p">:</span> <span class="s1">&#39;Mathematics&#39;</span><span class="p">,</span> <span class="s1">&#39;religionmythology&#39;</span><span class="p">:</span> <span class="s1">&#39;Religion and Mythology&#39;</span><span class="p">,</span> <span class="s1">&#39;sportsleisure&#39;</span><span class="p">:</span> <span class="s1">&#39;Sports and Leisure&#39;</span><span class="p">}</span></code>
+            <code class="highlight language-python"><span class="n">VALID_CATEGORIES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'artliterature'</span><span class="p">:</span> <span class="s1">'Art and Literature'</span><span class="p">,</span> <span class="s1">'language'</span><span class="p">:</span> <span class="s1">'Language'</span><span class="p">,</span> <span class="s1">'sciencenature'</span><span class="p">:</span> <span class="s1">'Science and Nature'</span><span class="p">,</span> <span class="s1">'general'</span><span class="p">:</span> <span class="s1">'General Knowledge'</span><span class="p">,</span> <span class="s1">'fooddrink'</span><span class="p">:</span> <span class="s1">'Food and Drink'</span><span class="p">,</span> <span class="s1">'peopleplaces'</span><span class="p">:</span> <span class="s1">'People and Places'</span><span class="p">,</span> <span class="s1">'geography'</span><span class="p">:</span> <span class="s1">'Geography'</span><span class="p">,</span> <span class="s1">'historyholidays'</span><span class="p">:</span> <span class="s1">'History and Holidays'</span><span class="p">,</span> <span class="s1">'entertainment'</span><span class="p">:</span> <span class="s1">'Entertainment'</span><span class="p">,</span> <span class="s1">'toysgames'</span><span class="p">:</span> <span class="s1">'Toys and Games'</span><span class="p">,</span> <span class="s1">'music'</span><span class="p">:</span> <span class="s1">'Music'</span><span class="p">,</span> <span class="s1">'mathematics'</span><span class="p">:</span> <span class="s1">'Mathematics'</span><span class="p">,</span> <span class="s1">'religionmythology'</span><span class="p">:</span> <span class="s1">'Religion and Mythology'</span><span class="p">,</span> <span class="s1">'sportsleisure'</span><span class="p">:</span> <span class="s1">'Sports and Leisure'</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -13472,7 +13533,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.api_ninjas_trivia.ApiNinjasTriviaSkill.tool_name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tool_name&#39;</span><span class="p">,</span> <span class="s1">&#39;get_trivia&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tool_name'</span><span class="p">,</span> <span class="s1">'get_trivia'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -13492,7 +13553,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.api_ninjas_trivia.ApiNinjasTriviaSkill.api_key" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;api_key&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'api_key'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -13512,7 +13573,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.api_ninjas_trivia.ApiNinjasTriviaSkill.categories" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">categories</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;categories&#39;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">VALID_CATEGORIES</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span></code>
+            <code class="highlight language-python"><span class="n">categories</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'categories'</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">VALID_CATEGORIES</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -13883,7 +13944,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.api_ninjas_trivia.skill.ApiNinjasTriviaSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;api_ninjas_trivia&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'api_ninjas_trivia'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -13904,7 +13965,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.api_ninjas_trivia.skill.ApiNinjasTriviaSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Get trivia questions from API Ninjas&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Get trivia questions from API Ninjas'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -13966,7 +14027,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.api_ninjas_trivia.skill.ApiNinjasTriviaSkill.VALID_CATEGORIES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">VALID_CATEGORIES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;artliterature&#39;</span><span class="p">:</span> <span class="s1">&#39;Art and Literature&#39;</span><span class="p">,</span> <span class="s1">&#39;language&#39;</span><span class="p">:</span> <span class="s1">&#39;Language&#39;</span><span class="p">,</span> <span class="s1">&#39;sciencenature&#39;</span><span class="p">:</span> <span class="s1">&#39;Science and Nature&#39;</span><span class="p">,</span> <span class="s1">&#39;general&#39;</span><span class="p">:</span> <span class="s1">&#39;General Knowledge&#39;</span><span class="p">,</span> <span class="s1">&#39;fooddrink&#39;</span><span class="p">:</span> <span class="s1">&#39;Food and Drink&#39;</span><span class="p">,</span> <span class="s1">&#39;peopleplaces&#39;</span><span class="p">:</span> <span class="s1">&#39;People and Places&#39;</span><span class="p">,</span> <span class="s1">&#39;geography&#39;</span><span class="p">:</span> <span class="s1">&#39;Geography&#39;</span><span class="p">,</span> <span class="s1">&#39;historyholidays&#39;</span><span class="p">:</span> <span class="s1">&#39;History and Holidays&#39;</span><span class="p">,</span> <span class="s1">&#39;entertainment&#39;</span><span class="p">:</span> <span class="s1">&#39;Entertainment&#39;</span><span class="p">,</span> <span class="s1">&#39;toysgames&#39;</span><span class="p">:</span> <span class="s1">&#39;Toys and Games&#39;</span><span class="p">,</span> <span class="s1">&#39;music&#39;</span><span class="p">:</span> <span class="s1">&#39;Music&#39;</span><span class="p">,</span> <span class="s1">&#39;mathematics&#39;</span><span class="p">:</span> <span class="s1">&#39;Mathematics&#39;</span><span class="p">,</span> <span class="s1">&#39;religionmythology&#39;</span><span class="p">:</span> <span class="s1">&#39;Religion and Mythology&#39;</span><span class="p">,</span> <span class="s1">&#39;sportsleisure&#39;</span><span class="p">:</span> <span class="s1">&#39;Sports and Leisure&#39;</span><span class="p">}</span></code>
+            <code class="highlight language-python"><span class="n">VALID_CATEGORIES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'artliterature'</span><span class="p">:</span> <span class="s1">'Art and Literature'</span><span class="p">,</span> <span class="s1">'language'</span><span class="p">:</span> <span class="s1">'Language'</span><span class="p">,</span> <span class="s1">'sciencenature'</span><span class="p">:</span> <span class="s1">'Science and Nature'</span><span class="p">,</span> <span class="s1">'general'</span><span class="p">:</span> <span class="s1">'General Knowledge'</span><span class="p">,</span> <span class="s1">'fooddrink'</span><span class="p">:</span> <span class="s1">'Food and Drink'</span><span class="p">,</span> <span class="s1">'peopleplaces'</span><span class="p">:</span> <span class="s1">'People and Places'</span><span class="p">,</span> <span class="s1">'geography'</span><span class="p">:</span> <span class="s1">'Geography'</span><span class="p">,</span> <span class="s1">'historyholidays'</span><span class="p">:</span> <span class="s1">'History and Holidays'</span><span class="p">,</span> <span class="s1">'entertainment'</span><span class="p">:</span> <span class="s1">'Entertainment'</span><span class="p">,</span> <span class="s1">'toysgames'</span><span class="p">:</span> <span class="s1">'Toys and Games'</span><span class="p">,</span> <span class="s1">'music'</span><span class="p">:</span> <span class="s1">'Music'</span><span class="p">,</span> <span class="s1">'mathematics'</span><span class="p">:</span> <span class="s1">'Mathematics'</span><span class="p">,</span> <span class="s1">'religionmythology'</span><span class="p">:</span> <span class="s1">'Religion and Mythology'</span><span class="p">,</span> <span class="s1">'sportsleisure'</span><span class="p">:</span> <span class="s1">'Sports and Leisure'</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -13986,7 +14047,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.api_ninjas_trivia.skill.ApiNinjasTriviaSkill.tool_name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tool_name&#39;</span><span class="p">,</span> <span class="s1">&#39;get_trivia&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tool_name'</span><span class="p">,</span> <span class="s1">'get_trivia'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -14006,7 +14067,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.api_ninjas_trivia.skill.ApiNinjasTriviaSkill.api_key" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;api_key&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'api_key'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -14026,7 +14087,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.api_ninjas_trivia.skill.ApiNinjasTriviaSkill.categories" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">categories</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;categories&#39;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">VALID_CATEGORIES</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span></code>
+            <code class="highlight language-python"><span class="n">categories</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'categories'</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">VALID_CATEGORIES</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -14449,7 +14510,7 @@ Use $ARGUMENTS for passed args.</p>
 
 
 <h6 id="signalwire.skills.claude_skills.skill.ClaudeSkillsSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;claude_skills&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'claude_skills'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -14470,7 +14531,7 @@ Use $ARGUMENTS for passed args.</p>
 
 
 <h6 id="signalwire.skills.claude_skills.skill.ClaudeSkillsSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Load Claude SKILL.md files as agent tools&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Load Claude SKILL.md files as agent tools'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -14491,7 +14552,7 @@ Use $ARGUMENTS for passed args.</p>
 
 
 <h6 id="signalwire.skills.claude_skills.skill.ClaudeSkillsSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -14512,7 +14573,7 @@ Use $ARGUMENTS for passed args.</p>
 
 
 <h6 id="signalwire.skills.claude_skills.skill.ClaudeSkillsSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;yaml&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'yaml'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -14729,7 +14790,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.skills.datasphere.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DataSphereSkill&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'DataSphereSkill'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -14788,7 +14849,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.datasphere.DataSphereSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;datasphere&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'datasphere'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -14809,7 +14870,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.datasphere.DataSphereSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search knowledge using SignalWire DataSphere RAG stack&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search knowledge using SignalWire DataSphere RAG stack'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -14830,7 +14891,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.datasphere.DataSphereSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -14851,7 +14912,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.datasphere.DataSphereSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15147,7 +15208,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datasphere.skill.DataSphereSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;datasphere&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'datasphere'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15168,7 +15229,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datasphere.skill.DataSphereSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search knowledge using SignalWire DataSphere RAG stack&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search knowledge using SignalWire DataSphere RAG stack'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15189,7 +15250,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datasphere.skill.DataSphereSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15210,7 +15271,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datasphere.skill.DataSphereSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15558,7 +15619,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datasphere_serverless.skill.DataSphereServerlessSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;datasphere_serverless&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'datasphere_serverless'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15579,7 +15640,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datasphere_serverless.skill.DataSphereServerlessSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search knowledge using SignalWire DataSphere with serverless DataMap execution&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search knowledge using SignalWire DataSphere with serverless DataMap execution'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15600,7 +15661,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datasphere_serverless.skill.DataSphereServerlessSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15951,7 +16012,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datetime.skill.DateTimeSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;datetime&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'datetime'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15972,7 +16033,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datetime.skill.DateTimeSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Get current date, time, and timezone information&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Get current date, time, and timezone information'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -15993,7 +16054,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datetime.skill.DateTimeSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16014,7 +16075,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.datetime.skill.DateTimeSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pytz&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'pytz'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16432,7 +16493,7 @@ Skill layer:   GoogleMapsSkill  (plug-and-play SWAIG tools)</p>
 
 
 <h6 id="signalwire.skills.google_maps.skill.GoogleMapsSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;google_maps&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'google_maps'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16453,7 +16514,7 @@ Skill layer:   GoogleMapsSkill  (plug-and-play SWAIG tools)</p>
 
 
 <h6 id="signalwire.skills.google_maps.skill.GoogleMapsSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Validate addresses and compute driving routes using Google Maps&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Validate addresses and compute driving routes using Google Maps'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16474,7 +16535,7 @@ Skill layer:   GoogleMapsSkill  (plug-and-play SWAIG tools)</p>
 
 
 <h6 id="signalwire.skills.google_maps.skill.GoogleMapsSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16495,7 +16556,7 @@ Skill layer:   GoogleMapsSkill  (plug-and-play SWAIG tools)</p>
 
 
 <h6 id="signalwire.skills.google_maps.skill.GoogleMapsSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16771,7 +16832,7 @@ question sets can coexist on a single agent (e.g. "intake" and
 
 
 <h6 id="signalwire.skills.info_gatherer.skill.InfoGathererSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;info_gatherer&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'info_gatherer'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16792,7 +16853,7 @@ question sets can coexist on a single agent (e.g. "intake" and
 
 
 <h6 id="signalwire.skills.info_gatherer.skill.InfoGathererSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Gather answers to a configurable list of questions&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Gather answers to a configurable list of questions'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -16813,7 +16874,7 @@ question sets can coexist on a single agent (e.g. "intake" and
 
 
 <h6 id="signalwire.skills.info_gatherer.skill.InfoGathererSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17117,7 +17178,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.joke.skill.JokeSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;joke&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'joke'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17138,7 +17199,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.joke.skill.JokeSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Tell jokes using the API Ninjas joke API&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Tell jokes using the API Ninjas joke API'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17159,7 +17220,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.joke.skill.JokeSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17470,7 +17531,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.math.skill.MathSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;math&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'math'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17491,7 +17552,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.math.skill.MathSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Perform basic mathematical calculations&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Perform basic mathematical calculations'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17512,7 +17573,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.math.skill.MathSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17829,7 +17890,7 @@ through a gateway service, dynamically creating SWAIG functions for MCP tools.</
 
 
 <h6 id="signalwire.skills.mcp_gateway.skill.MCPGatewaySkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;mcp_gateway&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'mcp_gateway'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17850,7 +17911,7 @@ through a gateway service, dynamically creating SWAIG functions for MCP tools.</
 
 
 <h6 id="signalwire.skills.mcp_gateway.skill.MCPGatewaySkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Bridge MCP servers with SWAIG functions&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Bridge MCP servers with SWAIG functions'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17871,7 +17932,7 @@ through a gateway service, dynamically creating SWAIG functions for MCP tools.</
 
 
 <h6 id="signalwire.skills.mcp_gateway.skill.MCPGatewaySkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -17892,7 +17953,7 @@ through a gateway service, dynamically creating SWAIG functions for MCP tools.</
 
 
 <h6 id="signalwire.skills.mcp_gateway.skill.MCPGatewaySkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -18182,7 +18243,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.native_vector_search.skill.NativeVectorSearchSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;native_vector_search&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'native_vector_search'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -18203,7 +18264,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.native_vector_search.skill.NativeVectorSearchSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search document indexes using vector similarity and keyword search (local or remote)&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search document indexes using vector similarity and keyword search (local or remote)'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -18224,7 +18285,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.native_vector_search.skill.NativeVectorSearchSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -18520,7 +18581,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.skills.play_background_file.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;PlayBackgroundFileSkill&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'PlayBackgroundFileSkill'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -18599,7 +18660,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.play_background_file.PlayBackgroundFileSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;play_background_file&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'play_background_file'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -18620,7 +18681,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.play_background_file.PlayBackgroundFileSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Control background file playback&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Control background file playback'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -18662,7 +18723,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.play_background_file.PlayBackgroundFileSkill.tool_name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tool_name&#39;</span><span class="p">,</span> <span class="s1">&#39;play_background_file&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tool_name'</span><span class="p">,</span> <span class="s1">'play_background_file'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -18682,7 +18743,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h5 id="signalwire.skills.play_background_file.PlayBackgroundFileSkill.files" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">files</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;files&#39;</span><span class="p">,</span> <span class="p">[])</span></code>
+            <code class="highlight language-python"><span class="n">files</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'files'</span><span class="p">,</span> <span class="p">[])</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -19041,7 +19102,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.play_background_file.skill.PlayBackgroundFileSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;play_background_file&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'play_background_file'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -19062,7 +19123,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.play_background_file.skill.PlayBackgroundFileSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Control background file playback&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Control background file playback'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -19104,7 +19165,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.play_background_file.skill.PlayBackgroundFileSkill.tool_name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tool_name&#39;</span><span class="p">,</span> <span class="s1">&#39;play_background_file&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tool_name'</span><span class="p">,</span> <span class="s1">'play_background_file'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -19124,7 +19185,7 @@ Uses DataMap for serverless execution with dynamic enum generation.</p>
 
 
 <h6 id="signalwire.skills.play_background_file.skill.PlayBackgroundFileSkill.files" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">files</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;files&#39;</span><span class="p">,</span> <span class="p">[])</span></code>
+            <code class="highlight language-python"><span class="n">files</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'files'</span><span class="p">,</span> <span class="p">[])</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -19492,7 +19553,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.registry.SkillRegistry.logger" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">&#39;skill_registry&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">'skill_registry'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -19868,7 +19929,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.skills.spider.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SpiderSkill&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'SpiderSkill'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -19927,7 +19988,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;spider&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'spider'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -19948,7 +20009,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Fast web scraping and crawling capabilities&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Fast web scraping and crawling capabilities'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -19969,7 +20030,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -19990,7 +20051,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lxml&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'lxml'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -20051,7 +20112,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.WHITESPACE_REGEX" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">WHITESPACE_REGEX</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">WHITESPACE_REGEX</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">'</span><span class="se">\\</span><span class="s1">s+'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -20072,7 +20133,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.delay" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">delay</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;delay&#39;</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">delay</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'delay'</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20092,7 +20153,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.concurrent_requests" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">concurrent_requests</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;concurrent_requests&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">concurrent_requests</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'concurrent_requests'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20112,7 +20173,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.timeout" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;timeout&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'timeout'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20132,7 +20193,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.max_pages" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_pages</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_pages&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_pages</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_pages'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20152,7 +20213,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.max_depth" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_depth</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_depth&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_depth</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_depth'</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20172,7 +20233,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.extract_type" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">extract_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;extract_type&#39;</span><span class="p">,</span> <span class="s1">&#39;fast_text&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">extract_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'extract_type'</span><span class="p">,</span> <span class="s1">'fast_text'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20192,7 +20253,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.max_text_length" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_text_length</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_text_length&#39;</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_text_length</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_text_length'</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20212,7 +20273,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.clean_text" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">clean_text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;clean_text&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">clean_text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'clean_text'</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20232,7 +20293,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.cache_enabled" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">cache_enabled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cache_enabled&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">cache_enabled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'cache_enabled'</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20252,7 +20313,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.follow_robots_txt" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">follow_robots_txt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;follow_robots_txt&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">follow_robots_txt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'follow_robots_txt'</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20272,7 +20333,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.user_agent" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">user_agent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;user_agent&#39;</span><span class="p">,</span> <span class="s1">&#39;Spider/1.0 (SignalWire AI Agent)&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">user_agent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'user_agent'</span><span class="p">,</span> <span class="s1">'Spider/1.0 (SignalWire AI Agent)'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20292,7 +20353,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.headers" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">headers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;headers&#39;</span><span class="p">,</span> <span class="p">{})</span></code>
+            <code class="highlight language-python"><span class="n">headers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'headers'</span><span class="p">,</span> <span class="p">{})</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20332,7 +20393,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.skills.spider.SpiderSkill.remove_xpaths" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">remove_xpaths</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;//script&#39;</span><span class="p">,</span> <span class="s1">&#39;//style&#39;</span><span class="p">,</span> <span class="s1">&#39;//nav&#39;</span><span class="p">,</span> <span class="s1">&#39;//header&#39;</span><span class="p">,</span> <span class="s1">&#39;//footer&#39;</span><span class="p">,</span> <span class="s1">&#39;//aside&#39;</span><span class="p">,</span> <span class="s1">&#39;//noscript&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">remove_xpaths</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'//script'</span><span class="p">,</span> <span class="s1">'//style'</span><span class="p">,</span> <span class="s1">'//nav'</span><span class="p">,</span> <span class="s1">'//header'</span><span class="p">,</span> <span class="s1">'//footer'</span><span class="p">,</span> <span class="s1">'//aside'</span><span class="p">,</span> <span class="s1">'//noscript'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20569,7 +20630,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;spider&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'spider'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -20590,7 +20651,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Fast web scraping and crawling capabilities&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Fast web scraping and crawling capabilities'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -20611,7 +20672,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -20632,7 +20693,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lxml&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'lxml'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -20693,7 +20754,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.WHITESPACE_REGEX" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">WHITESPACE_REGEX</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">s+&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">WHITESPACE_REGEX</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">'</span><span class="se">\\</span><span class="s1">s+'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -20714,7 +20775,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.delay" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">delay</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;delay&#39;</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">delay</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'delay'</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20734,7 +20795,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.concurrent_requests" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">concurrent_requests</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;concurrent_requests&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">concurrent_requests</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'concurrent_requests'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20754,7 +20815,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.timeout" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;timeout&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'timeout'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20774,7 +20835,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.max_pages" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_pages</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_pages&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_pages</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_pages'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20794,7 +20855,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.max_depth" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_depth</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_depth&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_depth</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_depth'</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20814,7 +20875,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.extract_type" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">extract_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;extract_type&#39;</span><span class="p">,</span> <span class="s1">&#39;fast_text&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">extract_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'extract_type'</span><span class="p">,</span> <span class="s1">'fast_text'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20834,7 +20895,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.max_text_length" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_text_length</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_text_length&#39;</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_text_length</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_text_length'</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20854,7 +20915,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.clean_text" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">clean_text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;clean_text&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">clean_text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'clean_text'</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20874,7 +20935,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.cache_enabled" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">cache_enabled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cache_enabled&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">cache_enabled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'cache_enabled'</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20894,7 +20955,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.follow_robots_txt" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">follow_robots_txt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;follow_robots_txt&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">follow_robots_txt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'follow_robots_txt'</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20914,7 +20975,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.user_agent" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">user_agent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;user_agent&#39;</span><span class="p">,</span> <span class="s1">&#39;Spider/1.0 (SignalWire AI Agent)&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">user_agent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'user_agent'</span><span class="p">,</span> <span class="s1">'Spider/1.0 (SignalWire AI Agent)'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20934,7 +20995,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.headers" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">headers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;headers&#39;</span><span class="p">,</span> <span class="p">{})</span></code>
+            <code class="highlight language-python"><span class="n">headers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'headers'</span><span class="p">,</span> <span class="p">{})</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -20974,7 +21035,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.spider.skill.SpiderSkill.remove_xpaths" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">remove_xpaths</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;//script&#39;</span><span class="p">,</span> <span class="s1">&#39;//style&#39;</span><span class="p">,</span> <span class="s1">&#39;//nav&#39;</span><span class="p">,</span> <span class="s1">&#39;//header&#39;</span><span class="p">,</span> <span class="s1">&#39;//footer&#39;</span><span class="p">,</span> <span class="s1">&#39;//aside&#39;</span><span class="p">,</span> <span class="s1">&#39;//noscript&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">remove_xpaths</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'//script'</span><span class="p">,</span> <span class="s1">'//style'</span><span class="p">,</span> <span class="s1">'//nav'</span><span class="p">,</span> <span class="s1">'//header'</span><span class="p">,</span> <span class="s1">'//footer'</span><span class="p">,</span> <span class="s1">'//aside'</span><span class="p">,</span> <span class="s1">'//noscript'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -21262,7 +21323,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.swml_transfer.skill.SWMLTransferSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;swml_transfer&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'swml_transfer'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -21283,7 +21344,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.swml_transfer.skill.SWMLTransferSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Transfer calls between agents based on pattern matching&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Transfer calls between agents based on pattern matching'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -21304,7 +21365,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.swml_transfer.skill.SWMLTransferSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -21560,7 +21621,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.skills.weather_api.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;WeatherApiSkill&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'WeatherApiSkill'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -21634,7 +21695,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h5 id="signalwire.skills.weather_api.WeatherApiSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;weather_api&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'weather_api'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -21655,7 +21716,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h5 id="signalwire.skills.weather_api.WeatherApiSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Get current weather information from WeatherAPI.com&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Get current weather information from WeatherAPI.com'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -21717,7 +21778,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h5 id="signalwire.skills.weather_api.WeatherApiSkill.tool_name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tool_name&#39;</span><span class="p">,</span> <span class="s1">&#39;get_weather&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tool_name'</span><span class="p">,</span> <span class="s1">'get_weather'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -21737,7 +21798,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h5 id="signalwire.skills.weather_api.WeatherApiSkill.api_key" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;api_key&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'api_key'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -21757,7 +21818,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h5 id="signalwire.skills.weather_api.WeatherApiSkill.temperature_unit" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">temperature_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;temperature_unit&#39;</span><span class="p">,</span> <span class="s1">&#39;fahrenheit&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">temperature_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'temperature_unit'</span><span class="p">,</span> <span class="s1">'fahrenheit'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -22071,7 +22132,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h6 id="signalwire.skills.weather_api.skill.WeatherApiSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;weather_api&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'weather_api'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -22092,7 +22153,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h6 id="signalwire.skills.weather_api.skill.WeatherApiSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Get current weather information from WeatherAPI.com&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Get current weather information from WeatherAPI.com'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -22154,7 +22215,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h6 id="signalwire.skills.weather_api.skill.WeatherApiSkill.tool_name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tool_name&#39;</span><span class="p">,</span> <span class="s1">&#39;get_weather&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">tool_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tool_name'</span><span class="p">,</span> <span class="s1">'get_weather'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -22174,7 +22235,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h6 id="signalwire.skills.weather_api.skill.WeatherApiSkill.api_key" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;api_key&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'api_key'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -22194,7 +22255,7 @@ TTS-optimized natural language responses.</p>
 
 
 <h6 id="signalwire.skills.weather_api.skill.WeatherApiSkill.temperature_unit" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">temperature_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;temperature_unit&#39;</span><span class="p">,</span> <span class="s1">&#39;fahrenheit&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">temperature_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'temperature_unit'</span><span class="p">,</span> <span class="s1">'fahrenheit'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -23041,7 +23102,7 @@ content is not required.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill.WebSearchSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;web_search&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'web_search'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -23062,7 +23123,7 @@ content is not required.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill.WebSearchSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search the web for information using Google Custom Search API&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search the web for information using Google Custom Search API'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -23083,7 +23144,7 @@ content is not required.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill.WebSearchSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;2.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'2.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -23104,7 +23165,7 @@ content is not required.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill.WebSearchSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bs4&#39;</span><span class="p">,</span> <span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'bs4'</span><span class="p">,</span> <span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -23743,7 +23804,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_improved.WebSearchSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;web_search&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'web_search'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -23764,7 +23825,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_improved.WebSearchSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search the web for information using Google Custom Search API&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search the web for information using Google Custom Search API'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -23785,7 +23846,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_improved.WebSearchSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;2.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'2.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -23806,7 +23867,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_improved.WebSearchSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bs4&#39;</span><span class="p">,</span> <span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'bs4'</span><span class="p">,</span> <span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24351,7 +24412,7 @@ and number of results to ensure total response stays within bounds.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_original.WebSearchSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;web_search&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'web_search'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24372,7 +24433,7 @@ and number of results to ensure total response stays within bounds.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_original.WebSearchSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search the web for information using Google Custom Search API&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search the web for information using Google Custom Search API'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24393,7 +24454,7 @@ and number of results to ensure total response stays within bounds.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_original.WebSearchSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24414,7 +24475,7 @@ and number of results to ensure total response stays within bounds.</p>
 
 
 <h6 id="signalwire.skills.web_search.skill_original.WebSearchSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bs4&#39;</span><span class="p">,</span> <span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'bs4'</span><span class="p">,</span> <span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24671,7 +24732,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.skills.wikipedia_search.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;WikipediaSearchSkill&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'WikipediaSearchSkill'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -24732,7 +24793,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h5 id="signalwire.skills.wikipedia_search.WikipediaSearchSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;wikipedia_search&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'wikipedia_search'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24753,7 +24814,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h5 id="signalwire.skills.wikipedia_search.WikipediaSearchSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search Wikipedia for information about a topic and get article summaries&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search Wikipedia for information about a topic and get article summaries'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24774,7 +24835,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h5 id="signalwire.skills.wikipedia_search.WikipediaSearchSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -24795,7 +24856,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h5 id="signalwire.skills.wikipedia_search.WikipediaSearchSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -25181,7 +25242,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h6 id="signalwire.skills.wikipedia_search.skill.WikipediaSearchSkill.SKILL_NAME" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">&#39;wikipedia_search&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_NAME</span> <span class="o">=</span> <span class="s1">'wikipedia_search'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -25202,7 +25263,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h6 id="signalwire.skills.wikipedia_search.skill.WikipediaSearchSkill.SKILL_DESCRIPTION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;Search Wikipedia for information about a topic and get article summaries&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_DESCRIPTION</span> <span class="o">=</span> <span class="s1">'Search Wikipedia for information about a topic and get article summaries'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -25223,7 +25284,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h6 id="signalwire.skills.wikipedia_search.skill.WikipediaSearchSkill.SKILL_VERSION" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span></code>
+            <code class="highlight language-python"><span class="n">SKILL_VERSION</span> <span class="o">=</span> <span class="s1">'1.0.0'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -25244,7 +25305,7 @@ their introductory content, similar to getting a summary of a topic.</p>
 
 
 <h6 id="signalwire.skills.wikipedia_search.skill.WikipediaSearchSkill.REQUIRED_PACKAGES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;requests&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">REQUIRED_PACKAGES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'requests'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>

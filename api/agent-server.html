@@ -16,7 +16,7 @@
         <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="cli.html">
+        <link rel="next" href="agents.html">
       
       
         
@@ -426,6 +426,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -799,6 +803,62 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="agents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-chat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.ai_chat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1589,7 +1649,7 @@ server.run()</p>
 
 
 <h4 id="signalwire.agent_server.AgentServer.logger" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">&#39;AgentServer&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">'AgentServer'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -1609,7 +1669,7 @@ server.run()</p>
 
 
 <h4 id="signalwire.agent_server.AgentServer.app" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;SignalWire AI Agents&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Hosted SignalWire AI Agents&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">&#39;3.0.2&#39;</span><span class="p">,</span> <span class="n">redirect_slashes</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">docs_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">redoc_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">openapi_url</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">'SignalWire AI Agents'</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">'Hosted SignalWire AI Agents'</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">'3.2.0'</span><span class="p">,</span> <span class="n">redirect_slashes</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">docs_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">redoc_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">openapi_url</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -1651,7 +1711,7 @@ server.run()</p>
 
 
 <h4 id="signalwire.agent_server.AgentServer.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">'0.0.0.0'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="s1">'info'</span><span class="p">)</span></code>
 
 <a href="#signalwire.agent_server.AgentServer.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -1820,7 +1880,7 @@ server.run()</p>
 
 
 <h4 id="signalwire.agent_server.AgentServer.setup_sip_routing" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">setup_sip_routing</span><span class="p">(</span><span class="n">route</span><span class="o">=</span><span class="s1">&#39;/sip&#39;</span><span class="p">,</span> <span class="n">auto_map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">setup_sip_routing</span><span class="p">(</span><span class="n">route</span><span class="o">=</span><span class="s1">'/sip'</span><span class="p">,</span> <span class="n">auto_map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
 <a href="#signalwire.agent_server.AgentServer.setup_sip_routing" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -2168,6 +2228,7 @@ handle SIP requests for specific usernames.</p>
                 <code>event</code>
             </td>
             <td>
+                  <code><span title="typing.Any">Any</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2183,6 +2244,7 @@ handle SIP requests for specific usernames.</p>
                 <code>context</code>
             </td>
             <td>
+                  <code><span title="typing.Any">Any</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2268,7 +2330,8 @@ handle SIP requests for specific usernames.</p>
     <div class="doc doc-contents ">
 
         <p>Register a routing callback across all agents</p>
-<p>This allows you to add unified routing logic to all agents at the same path.</p>
+<p>This allows you to add unified routing logic to all agents at the same path.
+The callback receives <code>(body, headers)</code> — the framework-free shape.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -2287,11 +2350,11 @@ handle SIP requests for specific usernames.</p>
                 <code>callback_fn</code>
             </td>
             <td>
-                  <code><span title="collections.abc.Callable">Callable</span>[[<span title="fastapi.Request">Request</span>, <span title="dict">dict</span>[<span title="str">str</span>, <span title="typing.Any">Any</span>]], <span title="str">str</span> | None]</code>
+                  <code><span title="collections.abc.Callable">Callable</span>[[<span title="dict">dict</span>[<span title="str">str</span>, <span title="typing.Any">Any</span>], <span title="dict">dict</span>[<span title="str">str</span>, <span title="typing.Any">Any</span>]], <span title="str">str</span> | None]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The callback function to register</p>
+                <p>The callback function to register, <code>(body, headers)</code>.</p>
               </div>
             </td>
             <td>
@@ -2326,7 +2389,7 @@ handle SIP requests for specific usernames.</p>
 
 
 <h4 id="signalwire.agent_server.AgentServer.serve_static_files" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">serve_static_files</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">route</span><span class="o">=</span><span class="s1">&#39;/&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">serve_static_files</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">route</span><span class="o">=</span><span class="s1">'/'</span><span class="p">)</span></code>
 
 <a href="#signalwire.agent_server.AgentServer.serve_static_files" class="headerlink" title="Permanent link">&para;</a></h4>
 

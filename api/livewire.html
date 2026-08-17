@@ -426,6 +426,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -495,6 +499,62 @@
     
   
     signalwire.agent_server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="agents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-chat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.ai_chat
   
 
     
@@ -3430,7 +3490,7 @@ names; just change the import path to run on SignalWire infrastructure.</p>
 
 
 <h3 id="signalwire.livewire.BANNER" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">BANNER</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">    __    _            _       ___</span><span class="se">\n</span><span class="s1">   / /   (_)   _____  | |     / (_)_______</span><span class="se">\n</span><span class="s1">  / /   / / | / / _ </span><span class="se">\\</span><span class="s1"> | | /| / / / ___/ _ </span><span class="se">\\\n</span><span class="s1"> / /___/ /| |/ /  __/ | |/ |/ / / /  /  __/</span><span class="se">\n</span><span class="s1">/_____/_/ |___/</span><span class="se">\\</span><span class="s1">___/  |__/|__/_/_/   </span><span class="se">\\</span><span class="s1">___/</span><span class="se">\n\n</span><span class="s1"> LiveKit-compatible agents powered by SignalWire</span><span class="se">\n</span><span class="s1">&#39;</span></code>
+            <code class="highlight language-python"><span class="n">BANNER</span> <span class="o">=</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">    __    _            _       ___</span><span class="se">\n</span><span class="s1">   / /   (_)   _____  | |     / (_)_______</span><span class="se">\n</span><span class="s1">  / /   / / | / / _ </span><span class="se">\\</span><span class="s1"> | | /| / / / ___/ _ </span><span class="se">\\\n</span><span class="s1"> / /___/ /| |/ /  __/ | |/ |/ / / /  /  __/</span><span class="se">\n</span><span class="s1">/_____/_/ |___/</span><span class="se">\\</span><span class="s1">___/  |__/|__/_/_/   </span><span class="se">\\</span><span class="s1">___/</span><span class="se">\n\n</span><span class="s1"> LiveKit-compatible agents powered by SignalWire</span><span class="se">\n</span><span class="s1">'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -3450,7 +3510,7 @@ names; just change the import path to run on SignalWire infrastructure.</p>
 
 
 <h3 id="signalwire.livewire.TIPS" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">TIPS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SignalWire agents support DataMap tools that execute server-side -- no webhook infrastructure needed. See: docs/datamap_guide.md&#39;</span><span class="p">,</span> <span class="s1">&#39;SignalWire Contexts &amp; Steps give you mechanical state control over conversations -- no prompt engineering needed. See: docs/contexts_guide.md&#39;</span><span class="p">,</span> <span class="s1">&#39;SignalWire agents can transfer calls between agents with a single SwmlTransfer() action&#39;</span><span class="p">,</span> <span class="s1">&#39;SignalWire handles 18 built-in skills (datetime, math, web search, etc.) with one-liner integration via agent.AddSkill()&#39;</span><span class="p">,</span> <span class="s1">&#39;SignalWire agents support SMS, conferencing, call recording, and SIP -- all from the same agent&#39;</span><span class="p">,</span> <span class="s2">&quot;Your agent&#39;s entire AI pipeline (STT, LLM, TTS, VAD) runs in SignalWire&#39;s cloud -- zero infrastructure to manage&quot;</span><span class="p">,</span> <span class="s1">&#39;SignalWire prefab agents (Survey, Receptionist, FAQ, Concierge) give you production patterns in 10 lines of code&#39;</span><span class="p">,</span> <span class="s2">&quot;SignalWire&#39;s RELAY client gives you real-time WebSocket call control with 57+ methods -- play, record, detect, conference, and more&quot;</span><span class="p">,</span> <span class="s1">&#39;SignalWire agents auto-generate SWML documents -- the platform handles media, turn detection, and barge-in for you&#39;</span><span class="p">,</span> <span class="s1">&#39;You can host multiple agents on one server with AgentServer -- each with its own route, prompt, and tools&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">TIPS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'SignalWire agents support DataMap tools that execute server-side -- no webhook infrastructure needed. See: docs/datamap_guide.md'</span><span class="p">,</span> <span class="s1">'SignalWire Contexts &amp; Steps give you mechanical state control over conversations -- no prompt engineering needed. See: docs/contexts_guide.md'</span><span class="p">,</span> <span class="s1">'SignalWire agents can transfer calls between agents with a single SwmlTransfer() action'</span><span class="p">,</span> <span class="s1">'SignalWire handles 18 built-in skills (datetime, math, web search, etc.) with one-liner integration via agent.AddSkill()'</span><span class="p">,</span> <span class="s1">'SignalWire agents support SMS, conferencing, call recording, and SIP -- all from the same agent'</span><span class="p">,</span> <span class="s2">"Your agent's entire AI pipeline (STT, LLM, TTS, VAD) runs in SignalWire's cloud -- zero infrastructure to manage"</span><span class="p">,</span> <span class="s1">'SignalWire prefab agents (Survey, Receptionist, FAQ, Concierge) give you production patterns in 10 lines of code'</span><span class="p">,</span> <span class="s2">"SignalWire's RELAY client gives you real-time WebSocket call control with 57+ methods -- play, record, detect, conference, and more"</span><span class="p">,</span> <span class="s1">'SignalWire agents auto-generate SWML documents -- the platform handles media, turn detection, and barge-in for you'</span><span class="p">,</span> <span class="s1">'You can host multiple agents on one server with AgentServer -- each with its own route, prompt, and tools'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -3550,7 +3610,7 @@ names; just change the import path to run on SignalWire infrastructure.</p>
 
 
 <h3 id="signalwire.livewire.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Agent&#39;</span><span class="p">,</span> <span class="s1">&#39;AgentSession&#39;</span><span class="p">,</span> <span class="s1">&#39;RunContext&#39;</span><span class="p">,</span> <span class="s1">&#39;function_tool&#39;</span><span class="p">,</span> <span class="s1">&#39;ChatContext&#39;</span><span class="p">,</span> <span class="s1">&#39;StopResponse&#39;</span><span class="p">,</span> <span class="s1">&#39;ToolError&#39;</span><span class="p">,</span> <span class="s1">&#39;AgentHandoff&#39;</span><span class="p">,</span> <span class="s1">&#39;AgentServer&#39;</span><span class="p">,</span> <span class="s1">&#39;JobContext&#39;</span><span class="p">,</span> <span class="s1">&#39;JobProcess&#39;</span><span class="p">,</span> <span class="s1">&#39;Room&#39;</span><span class="p">,</span> <span class="s1">&#39;DeepgramSTT&#39;</span><span class="p">,</span> <span class="s1">&#39;OpenAILLM&#39;</span><span class="p">,</span> <span class="s1">&#39;CartesiaTTS&#39;</span><span class="p">,</span> <span class="s1">&#39;ElevenLabsTTS&#39;</span><span class="p">,</span> <span class="s1">&#39;SileroVAD&#39;</span><span class="p">,</span> <span class="s1">&#39;InferenceSTT&#39;</span><span class="p">,</span> <span class="s1">&#39;InferenceLLM&#39;</span><span class="p">,</span> <span class="s1">&#39;InferenceTTS&#39;</span><span class="p">,</span> <span class="s1">&#39;voice&#39;</span><span class="p">,</span> <span class="s1">&#39;llm_ns&#39;</span><span class="p">,</span> <span class="s1">&#39;cli_ns&#39;</span><span class="p">,</span> <span class="s1">&#39;inference&#39;</span><span class="p">,</span> <span class="s1">&#39;run_app&#39;</span><span class="p">,</span> <span class="s1">&#39;NOT_GIVEN&#39;</span><span class="p">,</span> <span class="s1">&#39;BANNER&#39;</span><span class="p">,</span> <span class="s1">&#39;TIPS&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Agent'</span><span class="p">,</span> <span class="s1">'AgentSession'</span><span class="p">,</span> <span class="s1">'RunContext'</span><span class="p">,</span> <span class="s1">'function_tool'</span><span class="p">,</span> <span class="s1">'ChatContext'</span><span class="p">,</span> <span class="s1">'StopResponse'</span><span class="p">,</span> <span class="s1">'ToolError'</span><span class="p">,</span> <span class="s1">'AgentHandoff'</span><span class="p">,</span> <span class="s1">'AgentServer'</span><span class="p">,</span> <span class="s1">'JobContext'</span><span class="p">,</span> <span class="s1">'JobProcess'</span><span class="p">,</span> <span class="s1">'Room'</span><span class="p">,</span> <span class="s1">'DeepgramSTT'</span><span class="p">,</span> <span class="s1">'OpenAILLM'</span><span class="p">,</span> <span class="s1">'CartesiaTTS'</span><span class="p">,</span> <span class="s1">'ElevenLabsTTS'</span><span class="p">,</span> <span class="s1">'SileroVAD'</span><span class="p">,</span> <span class="s1">'InferenceSTT'</span><span class="p">,</span> <span class="s1">'InferenceLLM'</span><span class="p">,</span> <span class="s1">'InferenceTTS'</span><span class="p">,</span> <span class="s1">'voice'</span><span class="p">,</span> <span class="s1">'llm_ns'</span><span class="p">,</span> <span class="s1">'cli_ns'</span><span class="p">,</span> <span class="s1">'inference'</span><span class="p">,</span> <span class="s1">'run_app'</span><span class="p">,</span> <span class="s1">'NOT_GIVEN'</span><span class="p">,</span> <span class="s1">'BANNER'</span><span class="p">,</span> <span class="s1">'TIPS'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -3809,7 +3869,7 @@ names; just change the import path to run on SignalWire infrastructure.</p>
 
 
 <h4 id="signalwire.livewire.ChatContext.append" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">append</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">append</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="s1">'user'</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span></code>
 
 <a href="#signalwire.livewire.ChatContext.append" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -4054,7 +4114,7 @@ names; just change the import path to run on SignalWire infrastructure.</p>
 
 
 <h4 id="signalwire.livewire.Agent.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">tools</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chat_ctx</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">stt</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">tts</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">vad</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">turn_detection</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">mcp_servers</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">allow_interruptions</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">min_endpointing_delay</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">max_endpointing_delay</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">tools</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chat_ctx</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">stt</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">tts</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">vad</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">turn_detection</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">mcp_servers</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">allow_interruptions</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">min_endpointing_delay</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">,</span> <span class="n">max_endpointing_delay</span><span class="o">=</span><span class="n">NOT_GIVEN</span><span class="p">)</span></code>
 
 <a href="#signalwire.livewire.Agent.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -4489,7 +4549,7 @@ handles this; if <em>instructions</em> is provided they are noted.</p>
 
 
 <h4 id="signalwire.livewire.Room.name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;livewire-room&#39;</span></code>
+            <code class="highlight language-python"><span class="n">name</span> <span class="o">=</span> <span class="s1">'livewire-room'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -4823,7 +4883,7 @@ invokes the SWML endpoint.</p>
 
 
 <h4 id="signalwire.livewire.AgentServer.rtc_session" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">rtc_session</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">agent_name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;room&#39;</span><span class="p">,</span> <span class="n">on_request</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">on_session_end</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">rtc_session</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">agent_name</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'room'</span><span class="p">,</span> <span class="n">on_request</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">on_session_end</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#signalwire.livewire.AgentServer.rtc_session" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -4947,7 +5007,7 @@ invokes the SWML endpoint.</p>
 
 
 <h4 id="signalwire.livewire.OpenAILLM.model" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">model</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">model</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'model'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5259,7 +5319,7 @@ invokes the SWML endpoint.</p>
 
 
 <h4 id="signalwire.livewire.InferenceSTT.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#signalwire.livewire.InferenceSTT.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -5341,7 +5401,7 @@ invokes the SWML endpoint.</p>
 
 
 <h4 id="signalwire.livewire.InferenceLLM.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#signalwire.livewire.InferenceLLM.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -5423,7 +5483,7 @@ invokes the SWML endpoint.</p>
 
 
 <h4 id="signalwire.livewire.InferenceTTS.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#signalwire.livewire.InferenceTTS.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -5627,7 +5687,7 @@ STT/TTS/LLM/VAD infrastructure -- these are no-ops that log once.</p>
 
 
 <h5 id="signalwire.livewire.plugins.OpenAILLM.model" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">model</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">model</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'model'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>

@@ -426,6 +426,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -495,6 +499,62 @@
     
   
     signalwire.agent_server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="agents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-chat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.ai_chat
   
 
     
@@ -4873,7 +4933,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h3 id="signalwire.mcp_gateway.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;MCPClient&#39;</span><span class="p">,</span> <span class="s1">&#39;MCPGateway&#39;</span><span class="p">,</span> <span class="s1">&#39;MCPManager&#39;</span><span class="p">,</span> <span class="s1">&#39;MCPService&#39;</span><span class="p">,</span> <span class="s1">&#39;Session&#39;</span><span class="p">,</span> <span class="s1">&#39;SessionManager&#39;</span><span class="p">,</span> <span class="s1">&#39;main&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'MCPClient'</span><span class="p">,</span> <span class="s1">'MCPGateway'</span><span class="p">,</span> <span class="s1">'MCPManager'</span><span class="p">,</span> <span class="s1">'MCPService'</span><span class="p">,</span> <span class="s1">'Session'</span><span class="p">,</span> <span class="s1">'SessionManager'</span><span class="p">,</span> <span class="s1">'main'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4970,7 +5030,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.MCPGateway.security" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_path</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">&#39;mcp&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_path</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">'mcp'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5070,7 +5130,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.MCPGateway.rate_config" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">rate_config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;rate_limiting&#39;</span><span class="p">,</span> <span class="p">{})</span></code>
+            <code class="highlight language-python"><span class="n">rate_config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rate_limiting'</span><span class="p">,</span> <span class="p">{})</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5090,7 +5150,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.MCPGateway.limiter" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">limiter</span> <span class="o">=</span> <span class="n">Limiter</span><span class="p">(</span><span class="n">app</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="p">),</span> <span class="n">key_func</span><span class="o">=</span><span class="n">get_remote_address</span><span class="p">,</span> <span class="n">default_limits</span><span class="o">=</span><span class="n">default_limits</span><span class="p">,</span> <span class="n">storage_uri</span><span class="o">=</span><span class="n">storage_uri</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">limiter</span> <span class="o">=</span> <span class="n">Limiter</span><span class="p">(</span><span class="n">app</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="p">,</span> <span class="n">key_func</span><span class="o">=</span><span class="n">get_remote_address</span><span class="p">,</span> <span class="n">default_limits</span><span class="o">=</span><span class="n">default_limits</span><span class="p">,</span> <span class="n">storage_uri</span><span class="o">=</span><span class="n">storage_uri</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5112,7 +5172,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.MCPGateway.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s1">&#39;config.json&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s1">'config.json'</span><span class="p">)</span></code>
 
 <a href="#signalwire.mcp_gateway.MCPGateway.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -5272,7 +5332,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.Session.created_at" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">created_at</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">))</span></code>
+            <code class="highlight language-python"><span class="n">created_at</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -5293,7 +5353,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.Session.last_accessed" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">last_accessed</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">))</span></code>
+            <code class="highlight language-python"><span class="n">last_accessed</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -5540,7 +5600,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.SessionManager.cleanup_interval" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">cleanup_interval</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cleanup_interval&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">cleanup_interval</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'cleanup_interval'</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5560,7 +5620,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.SessionManager.max_sessions_per_service" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_sessions_per_service</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_sessions_per_service&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_sessions_per_service</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_sessions_per_service'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5580,7 +5640,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.SessionManager.max_total_sessions" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_total_sessions</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_total_sessions&#39;</span><span class="p">,</span> <span class="n">max_total_sessions</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_total_sessions</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_total_sessions'</span><span class="p">,</span> <span class="n">max_total_sessions</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5600,7 +5660,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.SessionManager.default_timeout" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">default_timeout</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;default_timeout&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">default_timeout</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'default_timeout'</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -5620,7 +5680,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.SessionManager.cleanup_thread" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">cleanup_thread</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_loop</span><span class="p">),</span> <span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">cleanup_thread</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_loop</span><span class="p">,</span> <span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -6212,7 +6272,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.MCPClient.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">service</span><span class="p">,</span> <span class="n">sandbox_base_dir</span><span class="o">=</span><span class="s1">&#39;./sandbox&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">service</span><span class="p">,</span> <span class="n">sandbox_base_dir</span><span class="o">=</span><span class="s1">'./sandbox'</span><span class="p">)</span></code>
 
 <a href="#signalwire.mcp_gateway.MCPClient.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -6422,7 +6482,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.mcp_gateway.MCPManager.sandbox_base_dir" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">sandbox_base_dir</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;sandbox_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;./sandbox&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">sandbox_base_dir</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'sandbox_dir'</span><span class="p">,</span> <span class="s1">'./sandbox'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -6634,7 +6694,7 @@ Manages sessions, handles authentication, and translates between protocols.</p>
 
 
 <h4 id="signalwire.mcp_gateway.gateway_service.logger" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">&#39;gateway_service&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">'gateway_service'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -6731,7 +6791,7 @@ Manages sessions, handles authentication, and translates between protocols.</p>
 
 
 <h5 id="signalwire.mcp_gateway.gateway_service.MCPGateway.security" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_path</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">&#39;mcp&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_path</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">'mcp'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -6831,7 +6891,7 @@ Manages sessions, handles authentication, and translates between protocols.</p>
 
 
 <h5 id="signalwire.mcp_gateway.gateway_service.MCPGateway.rate_config" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">rate_config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;rate_limiting&#39;</span><span class="p">,</span> <span class="p">{})</span></code>
+            <code class="highlight language-python"><span class="n">rate_config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rate_limiting'</span><span class="p">,</span> <span class="p">{})</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -6851,7 +6911,7 @@ Manages sessions, handles authentication, and translates between protocols.</p>
 
 
 <h5 id="signalwire.mcp_gateway.gateway_service.MCPGateway.limiter" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">limiter</span> <span class="o">=</span> <span class="n">Limiter</span><span class="p">(</span><span class="n">app</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="p">),</span> <span class="n">key_func</span><span class="o">=</span><span class="n">get_remote_address</span><span class="p">,</span> <span class="n">default_limits</span><span class="o">=</span><span class="n">default_limits</span><span class="p">,</span> <span class="n">storage_uri</span><span class="o">=</span><span class="n">storage_uri</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">limiter</span> <span class="o">=</span> <span class="n">Limiter</span><span class="p">(</span><span class="n">app</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="p">,</span> <span class="n">key_func</span><span class="o">=</span><span class="n">get_remote_address</span><span class="p">,</span> <span class="n">default_limits</span><span class="o">=</span><span class="n">default_limits</span><span class="p">,</span> <span class="n">storage_uri</span><span class="o">=</span><span class="n">storage_uri</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -6873,7 +6933,7 @@ Manages sessions, handles authentication, and translates between protocols.</p>
 
 
 <h5 id="signalwire.mcp_gateway.gateway_service.MCPGateway.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s1">&#39;config.json&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s1">'config.json'</span><span class="p">)</span></code>
 
 <a href="#signalwire.mcp_gateway.gateway_service.MCPGateway.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -7457,7 +7517,7 @@ Implements the MCP protocol client functionality.</p>
 
 
 <h5 id="signalwire.mcp_gateway.mcp_manager.MCPClient.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">service</span><span class="p">,</span> <span class="n">sandbox_base_dir</span><span class="o">=</span><span class="s1">&#39;./sandbox&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">service</span><span class="p">,</span> <span class="n">sandbox_base_dir</span><span class="o">=</span><span class="s1">'./sandbox'</span><span class="p">)</span></code>
 
 <a href="#signalwire.mcp_gateway.mcp_manager.MCPClient.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -7667,7 +7727,7 @@ Implements the MCP protocol client functionality.</p>
 
 
 <h5 id="signalwire.mcp_gateway.mcp_manager.MCPManager.sandbox_base_dir" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">sandbox_base_dir</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;sandbox_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;./sandbox&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">sandbox_base_dir</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'sandbox_dir'</span><span class="p">,</span> <span class="s1">'./sandbox'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -7989,7 +8049,7 @@ Handles timeouts, cleanup, and resource limits.</p>
 
 
 <h5 id="signalwire.mcp_gateway.session_manager.Session.created_at" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">created_at</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">))</span></code>
+            <code class="highlight language-python"><span class="n">created_at</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -8010,7 +8070,7 @@ Handles timeouts, cleanup, and resource limits.</p>
 
 
 <h5 id="signalwire.mcp_gateway.session_manager.Session.last_accessed" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">last_accessed</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">))</span></code>
+            <code class="highlight language-python"><span class="n">last_accessed</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
@@ -8257,7 +8317,7 @@ Handles timeouts, cleanup, and resource limits.</p>
 
 
 <h5 id="signalwire.mcp_gateway.session_manager.SessionManager.cleanup_interval" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">cleanup_interval</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cleanup_interval&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">cleanup_interval</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'cleanup_interval'</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -8277,7 +8337,7 @@ Handles timeouts, cleanup, and resource limits.</p>
 
 
 <h5 id="signalwire.mcp_gateway.session_manager.SessionManager.max_sessions_per_service" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_sessions_per_service</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_sessions_per_service&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_sessions_per_service</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_sessions_per_service'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -8297,7 +8357,7 @@ Handles timeouts, cleanup, and resource limits.</p>
 
 
 <h5 id="signalwire.mcp_gateway.session_manager.SessionManager.max_total_sessions" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">max_total_sessions</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_total_sessions&#39;</span><span class="p">,</span> <span class="n">max_total_sessions</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">max_total_sessions</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'max_total_sessions'</span><span class="p">,</span> <span class="n">max_total_sessions</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -8317,7 +8377,7 @@ Handles timeouts, cleanup, and resource limits.</p>
 
 
 <h5 id="signalwire.mcp_gateway.session_manager.SessionManager.default_timeout" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">default_timeout</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;default_timeout&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">default_timeout</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'session'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'default_timeout'</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -8337,7 +8397,7 @@ Handles timeouts, cleanup, and resource limits.</p>
 
 
 <h5 id="signalwire.mcp_gateway.session_manager.SessionManager.cleanup_thread" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">cleanup_thread</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_loop</span><span class="p">),</span> <span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">cleanup_thread</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_cleanup_loop</span><span class="p">,</span> <span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>

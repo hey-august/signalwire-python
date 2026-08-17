@@ -426,6 +426,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -495,6 +499,62 @@
     
   
     signalwire.agent_server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="agents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-chat.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signalwire.ai_chat
   
 
     
@@ -2067,6 +2127,28 @@
     <span class="md-ellipsis">
       
         logger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.search.search_engine.MIN_CANDIDATE_POOL" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MIN_CANDIDATE_POOL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.search.search_engine.DIVERSITY_WINDOW" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DIVERSITY_WINDOW
       
     </span>
   </a>
@@ -3972,6 +4054,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#signalwire.search.search_engine.MIN_CANDIDATE_POOL" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MIN_CANDIDATE_POOL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signalwire.search.search_engine.DIVERSITY_WINDOW" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DIVERSITY_WINDOW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#signalwire.search.search_engine.SearchEngine" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4535,7 +4639,7 @@ pip install signalwire-sdk[search-all]       # All features
 
 
 <h3 id="signalwire.search.MODEL_ALIASES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">MODEL_ALIASES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;mini&#39;</span><span class="p">:</span> <span class="s1">&#39;sentence-transformers/all-MiniLM-L6-v2&#39;</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;sentence-transformers/all-mpnet-base-v2&#39;</span><span class="p">,</span> <span class="s1">&#39;large&#39;</span><span class="p">:</span> <span class="s1">&#39;sentence-transformers/all-mpnet-base-v2&#39;</span><span class="p">}</span></code>
+            <code class="highlight language-python"><span class="n">MODEL_ALIASES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'mini'</span><span class="p">:</span> <span class="s1">'sentence-transformers/all-MiniLM-L6-v2'</span><span class="p">,</span> <span class="s1">'base'</span><span class="p">:</span> <span class="s1">'sentence-transformers/all-mpnet-base-v2'</span><span class="p">,</span> <span class="s1">'large'</span><span class="p">:</span> <span class="s1">'sentence-transformers/all-mpnet-base-v2'</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4555,7 +4659,7 @@ pip install signalwire-sdk[search-all]       # All features
 
 
 <h3 id="signalwire.search.DEFAULT_MODEL" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">DEFAULT_MODEL</span> <span class="o">=</span> <span class="n">MODEL_ALIASES</span><span class="p">[</span><span class="s1">&#39;mini&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">DEFAULT_MODEL</span> <span class="o">=</span> <span class="n">MODEL_ALIASES</span><span class="p">[</span><span class="s1">'mini'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -4575,7 +4679,7 @@ pip install signalwire-sdk[search-all]       # All features
 
 
 <h3 id="signalwire.search.__all__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DEFAULT_MODEL&#39;</span><span class="p">,</span> <span class="s1">&#39;MODEL_ALIASES&#39;</span><span class="p">,</span> <span class="s1">&#39;DocumentProcessor&#39;</span><span class="p">,</span> <span class="s1">&#39;IndexBuilder&#39;</span><span class="p">,</span> <span class="s1">&#39;SearchEngine&#39;</span><span class="p">,</span> <span class="s1">&#39;SearchIndexMigrator&#39;</span><span class="p">,</span> <span class="s1">&#39;SearchService&#39;</span><span class="p">,</span> <span class="s1">&#39;preprocess_document_content&#39;</span><span class="p">,</span> <span class="s1">&#39;preprocess_query&#39;</span><span class="p">,</span> <span class="s1">&#39;resolve_model_alias&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'DEFAULT_MODEL'</span><span class="p">,</span> <span class="s1">'MODEL_ALIASES'</span><span class="p">,</span> <span class="s1">'DocumentProcessor'</span><span class="p">,</span> <span class="s1">'IndexBuilder'</span><span class="p">,</span> <span class="s1">'SearchEngine'</span><span class="p">,</span> <span class="s1">'SearchIndexMigrator'</span><span class="p">,</span> <span class="s1">'SearchService'</span><span class="p">,</span> <span class="s1">'preprocess_document_content'</span><span class="p">,</span> <span class="s1">'preprocess_query'</span><span class="p">,</span> <span class="s1">'resolve_model_alias'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -5619,7 +5723,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.document_processor.DocumentProcessor.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">chunking_strategy</span><span class="o">=</span><span class="s1">&#39;sentence&#39;</span><span class="p">,</span> <span class="n">max_sentences_per_chunk</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">split_newlines</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="s1">&#39;nltk&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">semantic_threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">topic_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">chunking_strategy</span><span class="o">=</span><span class="s1">'sentence'</span><span class="p">,</span> <span class="n">max_sentences_per_chunk</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">split_newlines</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="s1">'nltk'</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">semantic_threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">topic_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.document_processor.DocumentProcessor.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -6278,7 +6382,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.index_builder.IndexBuilder.doc_processor" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">doc_processor</span> <span class="o">=</span> <span class="n">DocumentProcessor</span><span class="p">(</span><span class="n">chunking_strategy</span><span class="o">=</span><span class="n">chunking_strategy</span><span class="p">,</span> <span class="n">max_sentences_per_chunk</span><span class="o">=</span><span class="n">max_sentences_per_chunk</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="n">chunk_size</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="n">chunk_overlap</span><span class="p">,</span> <span class="n">split_newlines</span><span class="o">=</span><span class="n">split_newlines</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">index_nlp_backend</span><span class="p">),</span> <span class="n">verbose</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">),</span> <span class="n">semantic_threshold</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">semantic_threshold</span><span class="p">),</span> <span class="n">topic_threshold</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">topic_threshold</span><span class="p">))</span></code>
+            <code class="highlight language-python"><span class="n">doc_processor</span> <span class="o">=</span> <span class="n">DocumentProcessor</span><span class="p">(</span><span class="n">chunking_strategy</span><span class="o">=</span><span class="n">chunking_strategy</span><span class="p">,</span> <span class="n">max_sentences_per_chunk</span><span class="o">=</span><span class="n">max_sentences_per_chunk</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="n">chunk_size</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="n">chunk_overlap</span><span class="p">,</span> <span class="n">split_newlines</span><span class="o">=</span><span class="n">split_newlines</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">index_nlp_backend</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">,</span> <span class="n">semantic_threshold</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">semantic_threshold</span><span class="p">,</span> <span class="n">topic_threshold</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">topic_threshold</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -6300,7 +6404,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.index_builder.IndexBuilder.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="s1">&#39;sentence-transformers/all-mpnet-base-v2&#39;</span><span class="p">,</span> <span class="n">chunking_strategy</span><span class="o">=</span><span class="s1">&#39;sentence&#39;</span><span class="p">,</span> <span class="n">max_sentences_per_chunk</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">split_newlines</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="s1">&#39;nltk&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">semantic_threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">topic_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="s1">&#39;sqlite&#39;</span><span class="p">,</span> <span class="n">connection_string</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="s1">'sentence-transformers/all-mpnet-base-v2'</span><span class="p">,</span> <span class="n">chunking_strategy</span><span class="o">=</span><span class="s1">'sentence'</span><span class="p">,</span> <span class="n">max_sentences_per_chunk</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">chunk_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">split_newlines</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="s1">'nltk'</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">semantic_threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">topic_threshold</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="s1">'sqlite'</span><span class="p">,</span> <span class="n">connection_string</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.index_builder.IndexBuilder.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -7361,7 +7465,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.search.models.MODEL_ALIASES" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">MODEL_ALIASES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;mini&#39;</span><span class="p">:</span> <span class="s1">&#39;sentence-transformers/all-MiniLM-L6-v2&#39;</span><span class="p">,</span> <span class="s1">&#39;base&#39;</span><span class="p">:</span> <span class="s1">&#39;sentence-transformers/all-mpnet-base-v2&#39;</span><span class="p">,</span> <span class="s1">&#39;large&#39;</span><span class="p">:</span> <span class="s1">&#39;sentence-transformers/all-mpnet-base-v2&#39;</span><span class="p">}</span></code>
+            <code class="highlight language-python"><span class="n">MODEL_ALIASES</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'mini'</span><span class="p">:</span> <span class="s1">'sentence-transformers/all-MiniLM-L6-v2'</span><span class="p">,</span> <span class="s1">'base'</span><span class="p">:</span> <span class="s1">'sentence-transformers/all-mpnet-base-v2'</span><span class="p">,</span> <span class="s1">'large'</span><span class="p">:</span> <span class="s1">'sentence-transformers/all-mpnet-base-v2'</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -7381,7 +7485,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.search.models.DEFAULT_MODEL" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">DEFAULT_MODEL</span> <span class="o">=</span> <span class="n">MODEL_ALIASES</span><span class="p">[</span><span class="s1">&#39;mini&#39;</span><span class="p">]</span></code>
+            <code class="highlight language-python"><span class="n">DEFAULT_MODEL</span> <span class="o">=</span> <span class="n">MODEL_ALIASES</span><span class="p">[</span><span class="s1">'mini'</span><span class="p">]</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -7988,7 +8092,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.pgvector_backend.PgVectorSearchBackend.table_name" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">table_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;chunks_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">collection_name</span><span class="si">}</span><span class="s1">&#39;</span></code>
+            <code class="highlight language-python"><span class="n">table_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'chunks_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">collection_name</span><span class="si">}</span><span class="s1">'</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -8413,7 +8517,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.search.query_processor.stopwords_language_map" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">stopwords_language_map</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;en&#39;</span><span class="p">:</span> <span class="s1">&#39;english&#39;</span><span class="p">,</span> <span class="s1">&#39;es&#39;</span><span class="p">:</span> <span class="s1">&#39;spanish&#39;</span><span class="p">,</span> <span class="s1">&#39;fr&#39;</span><span class="p">:</span> <span class="s1">&#39;french&#39;</span><span class="p">,</span> <span class="s1">&#39;de&#39;</span><span class="p">:</span> <span class="s1">&#39;german&#39;</span><span class="p">,</span> <span class="s1">&#39;it&#39;</span><span class="p">:</span> <span class="s1">&#39;italian&#39;</span><span class="p">,</span> <span class="s1">&#39;pt&#39;</span><span class="p">:</span> <span class="s1">&#39;portuguese&#39;</span><span class="p">,</span> <span class="s1">&#39;nl&#39;</span><span class="p">:</span> <span class="s1">&#39;dutch&#39;</span><span class="p">,</span> <span class="s1">&#39;ru&#39;</span><span class="p">:</span> <span class="s1">&#39;russian&#39;</span><span class="p">,</span> <span class="s1">&#39;ar&#39;</span><span class="p">:</span> <span class="s1">&#39;arabic&#39;</span><span class="p">,</span> <span class="s1">&#39;da&#39;</span><span class="p">:</span> <span class="s1">&#39;danish&#39;</span><span class="p">,</span> <span class="s1">&#39;fi&#39;</span><span class="p">:</span> <span class="s1">&#39;finnish&#39;</span><span class="p">,</span> <span class="s1">&#39;hu&#39;</span><span class="p">:</span> <span class="s1">&#39;hungarian&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">:</span> <span class="s1">&#39;norwegian&#39;</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">:</span> <span class="s1">&#39;romanian&#39;</span><span class="p">,</span> <span class="s1">&#39;sv&#39;</span><span class="p">:</span> <span class="s1">&#39;swedish&#39;</span><span class="p">,</span> <span class="s1">&#39;tr&#39;</span><span class="p">:</span> <span class="s1">&#39;turkish&#39;</span><span class="p">}</span></code>
+            <code class="highlight language-python"><span class="n">stopwords_language_map</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'en'</span><span class="p">:</span> <span class="s1">'english'</span><span class="p">,</span> <span class="s1">'es'</span><span class="p">:</span> <span class="s1">'spanish'</span><span class="p">,</span> <span class="s1">'fr'</span><span class="p">:</span> <span class="s1">'french'</span><span class="p">,</span> <span class="s1">'de'</span><span class="p">:</span> <span class="s1">'german'</span><span class="p">,</span> <span class="s1">'it'</span><span class="p">:</span> <span class="s1">'italian'</span><span class="p">,</span> <span class="s1">'pt'</span><span class="p">:</span> <span class="s1">'portuguese'</span><span class="p">,</span> <span class="s1">'nl'</span><span class="p">:</span> <span class="s1">'dutch'</span><span class="p">,</span> <span class="s1">'ru'</span><span class="p">:</span> <span class="s1">'russian'</span><span class="p">,</span> <span class="s1">'ar'</span><span class="p">:</span> <span class="s1">'arabic'</span><span class="p">,</span> <span class="s1">'da'</span><span class="p">:</span> <span class="s1">'danish'</span><span class="p">,</span> <span class="s1">'fi'</span><span class="p">:</span> <span class="s1">'finnish'</span><span class="p">,</span> <span class="s1">'hu'</span><span class="p">:</span> <span class="s1">'hungarian'</span><span class="p">,</span> <span class="s1">'no'</span><span class="p">:</span> <span class="s1">'norwegian'</span><span class="p">,</span> <span class="s1">'ro'</span><span class="p">:</span> <span class="s1">'romanian'</span><span class="p">,</span> <span class="s1">'sv'</span><span class="p">:</span> <span class="s1">'swedish'</span><span class="p">,</span> <span class="s1">'tr'</span><span class="p">:</span> <span class="s1">'turkish'</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -8433,7 +8537,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.search.query_processor.pos_mapping" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">pos_mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;NOUN&#39;</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">NOUN</span><span class="p">,</span> <span class="s1">&#39;VERB&#39;</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">VERB</span><span class="p">,</span> <span class="s1">&#39;ADJ&#39;</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">ADJ</span><span class="p">,</span> <span class="s1">&#39;ADV&#39;</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">ADV</span><span class="p">,</span> <span class="s1">&#39;PROPN&#39;</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">NOUN</span><span class="p">}</span></code>
+            <code class="highlight language-python"><span class="n">pos_mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'NOUN'</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">NOUN</span><span class="p">,</span> <span class="s1">'VERB'</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">VERB</span><span class="p">,</span> <span class="s1">'ADJ'</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">ADJ</span><span class="p">,</span> <span class="s1">'ADV'</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">ADV</span><span class="p">,</span> <span class="s1">'PROPN'</span><span class="p">:</span> <span class="n">wn</span><span class="o">.</span><span class="n">NOUN</span><span class="p">}</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -8665,7 +8769,7 @@ Returns numpy array of embeddings</p>
 
 
 <h4 id="signalwire.search.query_processor.preprocess_query" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">preprocess_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">pos_to_expand</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_synonyms</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vector</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vectorize_query_param</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nlp_backend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">query_nlp_backend</span><span class="o">=</span><span class="s1">&#39;nltk&#39;</span><span class="p">,</span> <span class="n">model_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">preserve_original</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">preprocess_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">'en'</span><span class="p">,</span> <span class="n">pos_to_expand</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_synonyms</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vector</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vectorize_query_param</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nlp_backend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">query_nlp_backend</span><span class="o">=</span><span class="s1">'nltk'</span><span class="p">,</span> <span class="n">model_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">preserve_original</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.query_processor.preprocess_query" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -8865,7 +8969,7 @@ Returns numpy array of embeddings</p>
 
 
 <h4 id="signalwire.search.query_processor.preprocess_document_content" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">preprocess_document_content</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">nlp_backend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="s1">&#39;nltk&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">preprocess_document_content</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">'en'</span><span class="p">,</span> <span class="n">nlp_backend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_nlp_backend</span><span class="o">=</span><span class="s1">'nltk'</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.query_processor.preprocess_document_content" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -9063,6 +9167,46 @@ See LICENSE file in the project root for full license information.</p>
 
 </div>
 
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="signalwire.search.search_engine.MIN_CANDIDATE_POOL" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">MIN_CANDIDATE_POOL</span> <span class="o">=</span> <span class="mi">30</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#signalwire.search.search_engine.MIN_CANDIDATE_POOL" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="signalwire.search.search_engine.DIVERSITY_WINDOW" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">DIVERSITY_WINDOW</span> <span class="o">=</span> <span class="mi">10</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#signalwire.search.search_engine.DIVERSITY_WINDOW" class="headerlink" title="Permanent link">&para;</a></h4>
+
+
+    <div class="doc doc-contents ">
+
+    </div>
+
+</div>
+
 
 
 <div class="doc doc-object doc-class">
@@ -9185,7 +9329,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.search_engine.SearchEngine.embedding_dim" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">embedding_dim</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;embedding_dimensions&#39;</span><span class="p">,</span> <span class="mi">768</span><span class="p">))</span></code>
+            <code class="highlight language-python"><span class="n">embedding_dim</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'embedding_dimensions'</span><span class="p">,</span> <span class="mi">768</span><span class="p">))</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -9207,7 +9351,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.search_engine.SearchEngine.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="s1">&#39;sqlite&#39;</span><span class="p">,</span> <span class="n">index_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">connection_string</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">collection_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="s1">'sqlite'</span><span class="p">,</span> <span class="n">index_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">connection_string</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">collection_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.search_engine.SearchEngine.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -9573,7 +9717,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h4 id="signalwire.search.search_service.logger" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">&#39;search_service&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s1">'search_service'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -9750,7 +9894,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.search_service.SearchRequest.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">index_name</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">similarity_threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">index_name</span><span class="o">=</span><span class="s1">'default'</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">similarity_threshold</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.search_service.SearchRequest.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -10150,7 +10294,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.search_service.SearchService.security" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_file</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">&#39;search&#39;</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">security</span> <span class="o">=</span> <span class="n">SecurityConfig</span><span class="p">(</span><span class="n">config_file</span><span class="o">=</span><span class="n">config_file</span><span class="p">,</span> <span class="n">service_name</span><span class="o">=</span><span class="s1">'search'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
@@ -10192,7 +10336,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.search_service.SearchService.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8001</span><span class="p">,</span> <span class="n">indexes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">basic_auth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="s1">&#39;sqlite&#39;</span><span class="p">,</span> <span class="n">connection_string</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8001</span><span class="p">,</span> <span class="n">indexes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">basic_auth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="s1">'sqlite'</span><span class="p">,</span> <span class="n">connection_string</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.search_service.SearchService.__init__" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -10208,7 +10352,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.search_service.SearchService.search_direct" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">search_direct</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">index_name</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">search_direct</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">index_name</span><span class="o">=</span><span class="s1">'default'</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.search_service.SearchService.search_direct" class="headerlink" title="Permanent link">&para;</a></h5>
 
@@ -10226,7 +10370,7 @@ See LICENSE file in the project root for full license information.</p>
 
 
 <h5 id="signalwire.search.search_service.SearchService.start" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">start</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_cert</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_key</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">start</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">'0.0.0.0'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_cert</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ssl_key</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#signalwire.search.search_service.SearchService.start" class="headerlink" title="Permanent link">&para;</a></h5>
 
